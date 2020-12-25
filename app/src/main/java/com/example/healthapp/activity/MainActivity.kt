@@ -1,5 +1,6 @@
 package com.example.healthapp.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,6 +9,7 @@ import android.widget.FrameLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.healthapp.BuildConfig
 import com.example.healthapp.R
 import com.example.healthapp.fragments.*
 import com.google.android.material.navigation.NavigationView
@@ -56,13 +58,13 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.home ->{
                     supportFragmentManager.beginTransaction()
-                        openHome()
+                    openHome()
                     drawerLayout.closeDrawers()
 
                 }
                 R.id.gymWorkout ->{
                     supportFragmentManager.beginTransaction()
-                        openGym()
+                    openGym()
                     drawerLayout.closeDrawers()
                 }
                 R.id.yoga ->{
@@ -84,25 +86,41 @@ class MainActivity : AppCompatActivity() {
                     supportActionBar?.title = "Dimensions Of Wellness"
                     drawerLayout.closeDrawers()
                 }
+                R.id.homeWorkout ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(
+                            R.id.frame,
+                            HomeWorkoutFragment()
+                        ).commit()
+                    supportActionBar?.title = "Home Workout"
+                    drawerLayout.closeDrawers()
+                }
+                R.id.share ->{
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)
+                    startActivity(shareIntent)
+                }
                 R.id.aboutapp ->{
-                supportFragmentManager.beginTransaction()
-                    .replace(
-                        R.id.frame,
-                        AboutAppFragment()
-                    )
+                    supportFragmentManager.beginTransaction()
+                        .replace(
+                            R.id.frame,
+                            AboutAppFragment()
+                        )
 
-                    .commit()
+                        .commit()
 
-                supportActionBar?.title = "About app"
-                drawerLayout.closeDrawers()
-            }
+                    supportActionBar?.title = "About app"
+                    drawerLayout.closeDrawers()
+                }
 
             }
             return@setNavigationItemSelectedListener true
 
         }
 
-}
+    }
     fun setUpToolbar(){
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Toolbar title"
@@ -152,7 +170,7 @@ class MainActivity : AppCompatActivity() {
             is YogaFragment -> openHome()
             is AboutAppFragment -> openHome()
             is DimensionOfWellnessFragment -> openHome()
-
+            is HomeWorkoutFragment -> openHome()
 
             is Gym_routine_advance -> openGym()
             is Gym_routine_beginner -> openGym()

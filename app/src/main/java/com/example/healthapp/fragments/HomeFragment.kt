@@ -4,10 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.example.healthapp.R
-import com.example.healthapp.activity.StepCounter
+import com.example.healthapp.activity.StepCounterActivity
 import com.example.healthapp.activity.BmiActivity
 import com.example.healthapp.activity.DevelopedByActivity
 
@@ -27,7 +26,7 @@ class HomeFragment : Fragment() {
         btnBMI = view.findViewById(R.id.btnBMI)
 
         btnStepcounter.setOnClickListener {
-            val intent = Intent(context, StepCounter::class.java)
+            val intent = Intent(context, StepCounterActivity::class.java)
             startActivity(intent)
         }
         btnBMI.setOnClickListener {

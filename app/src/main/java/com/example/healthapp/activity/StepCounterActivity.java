@@ -18,7 +18,7 @@ import com.example.healthapp.R;
 
 import java.util.logging.LogRecord;
 
-public class StepCounter extends AppCompatActivity implements SensorEventListener {
+public class StepCounterActivity extends AppCompatActivity implements SensorEventListener {
     private ProgressBar progressBar;
     TextView stepcounter,calories_burnt;
     Sensor stepcounterSensor;

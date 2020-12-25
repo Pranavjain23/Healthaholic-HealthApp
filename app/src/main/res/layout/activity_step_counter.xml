@@ -6,7 +6,7 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingTop="20dp"
-    tools:context="com.example.healthapp.activity.StepCounter"
+    tools:context="com.example.healthapp.activity.StepCounterActivity"
     android:background="@color/colorLightPink">
 
         <LinearLayout

@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DevelopedByActivity"></activity>
+        <activity android:name=".activity.HomeWorkoutActivity"></activity>
+        <activity android:name=".activity.DevelopedByActivity" />
         <activity android:name=".activity.BmiActivity" />
         <activity android:name=".activity.IntellectualActivity" />
         <activity android:name=".activity.SpiritualActivity" />
         <activity android:name=".activity.SocialActivity" />
         <activity android:name=".activity.EmotionalActivity" />
         <activity android:name=".activity.PhysicalActivity" />
-        <activity android:name=".activity.StepCounter" />
+        <activity android:name=".activity.StepCounterActivity" />
         <activity android:name=".activity.gymActivity.Gym_Activity_advance_day1" />
         <activity android:name=".activity.YogaActivity" />
         <activity android:name=".activity.MainActivity">
