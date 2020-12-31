@@ -1,11 +1,12 @@
 package com.example.healthapp.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
+import android.view.View
 import android.widget.FrameLayout
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -43,7 +44,13 @@ class MainActivity : AppCompatActivity() {
 
         openHome()
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
+        actionBarDrawerToggle.isDrawerIndicatorEnabled = true;
+
         actionBarDrawerToggle.syncState()
+//        actionBarDrawerToggle.setToolbarNavigationClickListener {
+//            drawerLayout.openDrawer(GravityCompat.START)
+//        }
+
 
         navigationView.setNavigationItemSelectedListener {
 
@@ -56,53 +63,56 @@ class MainActivity : AppCompatActivity() {
             previousMenuItem = it
 
             when(it.itemId) {
-                R.id.home ->{
+                R.id.home -> {
                     supportFragmentManager.beginTransaction()
                     openHome()
                     drawerLayout.closeDrawers()
 
                 }
-                R.id.gymWorkout ->{
+                R.id.gymWorkout -> {
                     supportFragmentManager.beginTransaction()
                     openGym()
                     drawerLayout.closeDrawers()
                 }
-                R.id.yoga ->{
+                R.id.yoga -> {
                     supportFragmentManager.beginTransaction()
                         .replace(
                             R.id.frame,
                             YogaFragment()
                         )
                         .commit()
-                    supportActionBar?.title = "Yoga Workout"
+                 //      supportActionBar?.title = "Yoga Workout"
                     drawerLayout.closeDrawers()
                 }
-                R.id.dimensionOfWellness ->{
+                R.id.dimensionOfWellness -> {
                     supportFragmentManager.beginTransaction()
                         .replace(
                             R.id.frame,
                             DimensionOfWellnessFragment()
                         ).commit()
-                    supportActionBar?.title = "Dimensions Of Wellness"
+                    //     supportActionBar?.title = "Dimensions Of Wellness"
                     drawerLayout.closeDrawers()
                 }
-                R.id.homeWorkout ->{
+                R.id.homeWorkout -> {
                     supportFragmentManager.beginTransaction()
                         .replace(
                             R.id.frame,
                             HomeWorkoutFragment()
                         ).commit()
-                    supportActionBar?.title = "Home Workout"
+                   //     supportActionBar?.title = "Home Workout"
                     drawerLayout.closeDrawers()
                 }
-                R.id.share ->{
+                R.id.share -> {
                     val shareIntent = Intent(Intent.ACTION_SEND)
                     shareIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     shareIntent.type = "text/plain"
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)
+                    shareIntent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID
+                    )
                     startActivity(shareIntent)
                 }
-                R.id.aboutapp ->{
+                R.id.aboutapp -> {
                     supportFragmentManager.beginTransaction()
                         .replace(
                             R.id.frame,
@@ -111,7 +121,7 @@ class MainActivity : AppCompatActivity() {
 
                         .commit()
 
-                    supportActionBar?.title = "About app"
+                    //    supportActionBar?.title = "About app"
                     drawerLayout.closeDrawers()
                 }
 
@@ -121,9 +131,10 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    fun setUpToolbar(){
+    private fun setUpToolbar(){
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Toolbar title"
+     //   supportActionBar?.title = "Toolbar title"
+        getSupportActionBar()?.setDisplayShowTitleEnabled(false);
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
@@ -147,18 +158,17 @@ class MainActivity : AppCompatActivity() {
             HomeFragment()
         )   // dashboard fragment is replacing the blank frame
         transaction.commit()
-        supportActionBar?.title = "Health And Wellness"    //giving the title to each fragment
+   //     supportActionBar?.title = "Health And Wellness"    //giving the title to each fragment
         navigationView.setCheckedItem(R.id.home)
     }
     fun openGym(){
-        val fragment = GymFragment()
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(
             R.id.frame,
             GymFragment()
         )   // dashboard fragment is replacing the blank frame
         transaction.commit()
-        supportActionBar?.title = "Gym Workout"    //giving the title to each fragment
+      //  supportActionBar?.title = "Gym Workout"    //giving the title to each fragment
         navigationView.setCheckedItem(R.id.gymWorkout)
     }
 
