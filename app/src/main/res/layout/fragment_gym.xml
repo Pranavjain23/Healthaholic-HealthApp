@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.GymFragment"
-    android:background="@color/colorLightPink">
+    android:background="@color/colorWhite">
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -20,36 +20,73 @@
         android:layout_marginTop="5dp"
         android:clickable="true"
     >
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@drawable/gymback">
+        android:background="@drawable/blue_background"
+        android:weightSum="7">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/weightsample"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_weight="4"
+        android:layout_marginTop="20dp" >
 
         <TextView
             android:id="@+id/txtBeginner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BEGINNER GYM"
+            android:text="BEGINNER"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:layout_centerInParent="true"
-            android:textSize="40sp"/>
+            android:textSize="33sp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtBeginner"
-            android:layout_centerHorizontal="true"
-            android:text="3 days body workout routine"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:textSize="17sp"
+            <TextView
+                android:id="@+id/txtBeginner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GYM"
+                android:layout_below="@id/txtBeginner"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="33sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBeginner1"
+                android:text="3 days body workout routine"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp"
             />
 
+        </RelativeLayout>
 
-    </RelativeLayout>
-
-</androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/intermediate"
@@ -61,34 +98,68 @@
         android:layout_below="@id/beginner"
         android:clickable="true"
         >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/pink_background"
+        android:weightSum="7">
+
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="@drawable/gymback1">
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_weight="5"
+            android:layout_marginTop="25dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp">
 
             <TextView
                 android:id="@+id/txtIntermediate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="INTERMEDIATE GYM"
+                android:text="INTERMEDIATE"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"
-                android:layout_centerInParent="true"
-                android:textSize="35sp"/>
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/txtIntermediate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GYM"
+                android:layout_below="@id/txtIntermediate"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtIntermediate"
-                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtIntermediate1"
                 android:text="3 days body workout routine"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"
                 android:textSize="17sp"
                 />
 
-
         </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/weightsample"/>
+
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -102,34 +173,71 @@
         android:layout_below="@id/intermediate"
         android:clickable="true"
         >
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@drawable/gymback2">
+            android:background="@drawable/orange_background"
+            android:weightSum="7">
 
-            <TextView
-                android:id="@+id/txtAdvance"
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ADVANCE GYM"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:layout_centerInParent="true"
-                android:textSize="40sp"/>
+                android:layout_height="match_parent"
+                android:layout_weight="2">
 
-            <TextView
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/weightsample"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/txtAdvance"
-                android:layout_centerHorizontal="true"
-                android:text="7 days body workout routine"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textSize="17sp"
-                />
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_weight="4"
+                android:layout_marginTop="20dp" >
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtAdvance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADVANCE"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="33sp"/>
+
+                <TextView
+                    android:id="@+id/txtAdvance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GYM"
+                    android:layout_below="@id/txtAdvance"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="33sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtAdvance1"
+                    android:text="7 days body workout routine"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 

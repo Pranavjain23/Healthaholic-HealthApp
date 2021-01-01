@@ -25,7 +25,7 @@ class Gym_routine_beginner : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_gym_routine, container, false)
         recyclerView = view.findViewById(R.id.recycler_gym)
-        llGym = GridLayoutManager(activity ,2)
+        llGym = LinearLayoutManager(activity)
         val listofDays = arrayListOf<gym_routine>()
 
         listofDays.add(

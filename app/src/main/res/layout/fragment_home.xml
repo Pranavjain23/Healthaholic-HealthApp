@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment"
-    android:background="#fafafa">
+    android:background="#ffffff">
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -76,7 +76,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@color/colorLightPink"
+            android:background="@drawable/pink_background"
             android:weightSum="7">
 
             <RelativeLayout
@@ -96,7 +96,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="4">
+                android:layout_weight="5">
 
                 <TextView
                     android:id="@+id/txtPedometer"
@@ -105,7 +105,7 @@
                     android:textSize="35sp"
                     android:layout_centerInParent="true"
                     android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
                     android:text="STEP UP"/>
 
                 <TextView
@@ -114,9 +114,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtPedometer"
                     android:text="STEP COUNTER "
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorWhite"
                     />
 
             </RelativeLayout>
@@ -135,7 +135,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@color/colorLightPink"
+            android:background="@drawable/purple_background"
             android:weightSum="7">
 
             <RelativeLayout
@@ -147,10 +147,10 @@
                     android:id="@+id/txtBMI"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     android:layout_centerInParent="true"
                     android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
                     android:text="BODY MASS INDEX"/>
 
                 <TextView
@@ -162,7 +162,7 @@
                     android:textAllCaps="true"
                     android:textSize="12sp"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorWhite"
                     />
 
 
@@ -211,7 +211,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="2.5dp">
+            android:layout_marginEnd="2.5dp"
+            app:cardCornerRadius="40dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -288,7 +289,8 @@
             android:layout_marginLeft="2.5dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="2.5dp">
+            android:layout_marginRight="2.5dp"
+            app:cardCornerRadius="40dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -363,7 +365,8 @@
             android:layout_marginStart="2.5dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp">
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="40dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -456,6 +459,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        app:cardCornerRadius="40dp"
         android:layout_below="@id/txtWater">
 
         <LinearLayout
