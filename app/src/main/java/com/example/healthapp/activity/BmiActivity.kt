@@ -1,5 +1,6 @@
 package com.example.healthapp.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
@@ -8,7 +9,9 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthapp.R
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_bmi.*
+
 
 class BmiActivity : AppCompatActivity() {
     lateinit var weight : EditText
@@ -50,15 +53,25 @@ class BmiActivity : AppCompatActivity() {
                 //Calculate BMI value
                 val bmiValue = calculateBMI(weight, height)
 
-                //Define the meaning of the bmi value
                 val bmiInterpretation = interpretBMI(bmiValue)
-                result.text = "$bmiValue-$bmiInterpretation"
+                showSnackBar(bmiInterpretation.toString())
+
+                    result.text = "BMI VALUE =$bmiValue"
             })
     }
 
     //Calculate BMI
     private fun calculateBMI(weight: Float, height: Float): Float {
         return (weight / (height * height))
+    }
+    private fun showSnackBar(msg:String) {
+        val snack = Snackbar.make(findViewById(R.id.bmi),
+            "You are $msg", Snackbar.LENGTH_INDEFINITE)
+        snack.setAction("Ok") {
+            finish()
+            // TODO when you tap on "Click Me"
+        }
+        snack.show()
     }
 
     // Interpret what BMI means

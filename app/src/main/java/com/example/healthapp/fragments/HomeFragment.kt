@@ -1,14 +1,19 @@
 package com.example.healthapp.fragments
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.fragment.app.Fragment
 import androidx.cardview.widget.CardView
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.example.healthapp.R
 import com.example.healthapp.activity.StepCounterActivity
 import com.example.healthapp.activity.BmiActivity
 import com.example.healthapp.activity.DevelopedByActivity
+import com.example.healthapp.activity.MainActivity
 
 class HomeFragment : Fragment() {
 
@@ -19,8 +24,9 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+
 
         btnStepcounter = view.findViewById(R.id.btnStepCounter)
         btnBMI = view.findViewById(R.id.btnBMI)

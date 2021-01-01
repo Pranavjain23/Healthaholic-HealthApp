@@ -33,7 +33,6 @@ class SliderAdapter_gym_advance_day2 (val context: Context) : PagerAdapter() {
         "Stiff-Legged Deadlift – 5 sets of 5 reps" ,
         "Hamstring Curls – 3 sets of 6-8 reps",
         "Calf-Raise – 5 sets of 10 reps"
-
     )
 
     val slide_descs = arrayOf(
