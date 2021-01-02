@@ -468,7 +468,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/water_background"
+            android:background="@drawable/water"
             android:weightSum="6"
             android:padding="10dp">
 
@@ -482,7 +482,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TARGET"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:layout_above="@+id/txtWaterQuantity"
                 android:layout_centerInParent="true"
                 android:textStyle="bold"
@@ -492,7 +492,7 @@
                 android:id="@+id/txtWaterQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:text="3.5L"
                 android:textStyle="bold"
                 android:textSize="30sp"
@@ -501,7 +501,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:text="Daily"
                 android:layout_below="@id/txtWaterQuantity"
                 android:textStyle="bold"
@@ -509,11 +509,7 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:src="@drawable/waterbottle"/>
+
 
         </LinearLayout>
 
@@ -525,10 +521,11 @@
         android:layout_below="@id/contentWater"
         android:padding="8dp"
         android:text="Prepare your stomach for any meal with one or two glasses of water"
-        android:background="#90caf9"
+        android:background="@drawable/water_background"
         android:textColor="@color/colorWhite"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"
         android:textAlignment="center"
         />
 
