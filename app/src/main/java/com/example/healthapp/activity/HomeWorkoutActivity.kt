@@ -41,6 +41,9 @@ class HomeWorkoutActivity : AppCompatActivity() {
         mSlideViewPager.addOnPageChangeListener(viewListener)
         mNextBtn.setOnClickListener {
             mSlideViewPager.currentItem = mCurrentPage + 1
+            if( mNextBtn.text == "Finish"){
+                finish()
+            }
         }
 
 

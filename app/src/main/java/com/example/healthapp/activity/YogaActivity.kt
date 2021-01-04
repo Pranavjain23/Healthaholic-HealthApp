@@ -35,13 +35,7 @@ class YogaActivity : AppCompatActivity() {
         mNextBtn = findViewById(R.id.nextBtn)
         mBackBtn = findViewById(R.id.prevBtn)
 
-            mNextBtn.setOnClickListener {
-                if( mNextBtn.text == "Finish"){
-                    finish()
-            }
-                Toast.makeText(applicationContext,"Next",Toast.LENGTH_SHORT).show()
 
-        }
         val sliderAdapter = SliderAdapter_yoga(this)
 
         mSlideViewPager.adapter = sliderAdapter
@@ -51,6 +45,9 @@ class YogaActivity : AppCompatActivity() {
         mSlideViewPager.addOnPageChangeListener(viewListener)
         mNextBtn.setOnClickListener {
             mSlideViewPager.currentItem = mCurrentPage + 1
+            if( mNextBtn.text == "Finish"){
+                finish()
+            }
         }
 
 
