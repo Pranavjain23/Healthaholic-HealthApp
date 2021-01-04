@@ -16,12 +16,26 @@ class SliderAdapter_gym_intermediate_day4(val context: Context) : PagerAdapter()
     lateinit var slideImageView : ImageView
     lateinit var slideHeading : TextView
     lateinit var slideDescription : TextView
+    lateinit var slideReps : TextView
+    lateinit var slideSets : TextView
 
     val slide_images = arrayOf(
 
         R.drawable.barbell_bench_press,
         R.drawable.tricep_kickback,
         R.drawable.dumbell_lateral_rise
+    )
+    val slide_sets = arrayOf(
+        "3 sets",
+
+        " 3 sets" ,
+        "2 sets"
+    )
+    val slide_reps = arrayOf(
+        "12 reps",
+
+        "6-10 reps" ,
+        "10 reps"
     )
 
     val slide_headings = arrayOf(
@@ -67,10 +81,14 @@ class SliderAdapter_gym_intermediate_day4(val context: Context) : PagerAdapter()
 
         slideImageView =  view.findViewById(R.id.imgYogaPose)
         slideHeading = view.findViewById(R.id.txtYogaName)
+        slideSets = view.findViewById(R.id.txtYogaSets)
+        slideReps = view.findViewById(R.id.txtYogaReps)
         slideDescription= view.findViewById(R.id.txtYogaDesc)
 
         slideImageView.setImageResource(slide_images[position])
         slideHeading.text = slide_headings[position]
+        slideSets.text = slide_sets[position]
+        slideReps.text = slide_reps[position]
         slideDescription.text = slide_descs[position]
 
         container.addView(view)

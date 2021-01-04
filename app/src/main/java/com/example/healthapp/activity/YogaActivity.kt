@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
@@ -34,6 +35,13 @@ class YogaActivity : AppCompatActivity() {
         mNextBtn = findViewById(R.id.nextBtn)
         mBackBtn = findViewById(R.id.prevBtn)
 
+            mNextBtn.setOnClickListener {
+                if( mNextBtn.text == "Finish"){
+                    finish()
+            }
+                Toast.makeText(applicationContext,"Next",Toast.LENGTH_SHORT).show()
+
+        }
         val sliderAdapter = SliderAdapter_yoga(this)
 
         mSlideViewPager.adapter = sliderAdapter
