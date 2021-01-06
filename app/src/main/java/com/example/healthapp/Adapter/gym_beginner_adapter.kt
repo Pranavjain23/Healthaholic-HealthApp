@@ -30,7 +30,6 @@ class gym_beginner_adapter(val context: Context, val list: ArrayList<gym_routine
     override fun onBindViewHolder(holder: gym_recycler, position: Int) {
         val gym= list[position]
         holder.gymday.text= gym.day
-        holder.exercise.text= gym.exercise
         holder.gymparts.text= gym.bodyparts
         holder.linearLayoutgym.setOnClickListener {
             if(position==0){
@@ -51,7 +50,6 @@ class gym_beginner_adapter(val context: Context, val list: ArrayList<gym_routine
 
     class gym_recycler(view: View): RecyclerView.ViewHolder(view) {
         val gymday : TextView =view.findViewById(R.id.gym_day);
-        val exercise : TextView =view.findViewById(R.id.gym_exercise);
         val gymparts: TextView =view.findViewById(R.id.gym_bodyparts);
         val linearLayoutgym: LinearLayout = view.findViewById(R.id.llGym)
 

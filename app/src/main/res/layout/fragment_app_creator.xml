@@ -56,7 +56,6 @@
             android:layout_height="140dp"
             android:layout_below="@+id/white"
             android:orientation="horizontal"
-            android:background="@color/lightBlue"
             android:weightSum="5">
 
             <ImageView
