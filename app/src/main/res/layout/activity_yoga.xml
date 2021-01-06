@@ -48,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Do each yoga asana for 2min minimum"
+        android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         />

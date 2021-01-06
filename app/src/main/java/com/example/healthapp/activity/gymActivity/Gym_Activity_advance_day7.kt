@@ -45,6 +45,9 @@ class Gym_Activity_advance_day7 : AppCompatActivity() {
         mSlideViewPager.addOnPageChangeListener(viewListener)
         mNextBtn.setOnClickListener {
             mSlideViewPager!!.currentItem = mCurrentPage + 1
+            if( mNextBtn.text == "Finish"){
+                finish()
+            }
         }
 
 

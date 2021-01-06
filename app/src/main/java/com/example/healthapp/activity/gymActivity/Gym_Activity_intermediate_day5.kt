@@ -35,7 +35,7 @@ class Gym_Activity_intermediate_day5 : AppCompatActivity() {
         mBackBtn = findViewById(R.id.prevBtn)
 
         val sliderAdapter =
-            SliderAdapter_gym_intermediate_day3(
+            SliderAdapter_gym_intermediate_day5(
                 this
             )
 
@@ -46,6 +46,9 @@ class Gym_Activity_intermediate_day5 : AppCompatActivity() {
         mSlideViewPager.addOnPageChangeListener(viewListener)
         mNextBtn.setOnClickListener {
             mSlideViewPager!!.currentItem = mCurrentPage + 1
+            if( mNextBtn.text == "Finish"){
+                finish()
+            }
         }
 
 
