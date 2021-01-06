@@ -3,6 +3,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
 
@@ -11,71 +12,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AboutAppFragment"
-    android:background="@color/colorBackground">
+    android:background="@color/colorWhite">
 
-    <TextView
-        android:id="@+id/aboutAppHeader"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/aboutAppHead" />
+        android:layout_marginBottom="20dp">
 
-    <TextView
-        android:id="@+id/aboutApp1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:layout_below="@id/aboutAppHeader"
-        android:text="@string/about_app" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Aboutapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="4dp">
 
-    <TextView
-        android:id="@+id/aboutApp2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:layout_below="@id/aboutApp1"
-        android:text="@string/about_app1" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/AboutAppHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About our app"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/aboutApp3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/about_app2"
-        android:layout_below="@id/aboutApp2"/>
+                <TextView
+                    android:id="@+id/txtAboutApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="The next segment of the course began by covering the important but often overlooked concepts of validation and accessibility."
+                    android:layout_below="@id/AboutAppHeader"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/aboutApp4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/about_app3"
-        android:layout_below="@id/aboutApp3"/>
+        <Button
+            android:id="@+id/creatorTeam"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="textStart"
+            android:text="App Creator Team"
+            android:drawableLeft="@drawable/ic_creator"
+            android:drawablePadding="15dp"
+            android:padding="30dp"
+            android:layout_below="@id/Aboutapp"/>
 
-    <TextView
-        android:id="@+id/aboutApp5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/about_app4"
-        android:layout_below="@id/aboutApp4"/>
+    </RelativeLayout>
+
 </RelativeLayout>
 </ScrollView>
