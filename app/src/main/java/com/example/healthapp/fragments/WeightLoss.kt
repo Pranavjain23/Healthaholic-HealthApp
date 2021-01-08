@@ -48,7 +48,7 @@ class WeightLoss : Fragment() {
             Diet_plan_model("Dinner","Between 7 pm to 8 pm","salad with fresh vegetables 1 cup ,Methi Dal / sambar/rasam (1 cup) ,Phulkas 1-2 piece ,Cooked vegetables(150 gms)","2 stuffed roti(any varities)")
         )
         lossArrayList.add(
-            Diet_plan_model("Post dinner(Bedtime)","Between 9 pm to 10 pm","Milk (optional)",    "Buttermilk (optional) 150 ml")
+            Diet_plan_model("Post dinner(Bedtime)","Between 9 pm to 10 pm","Milk (try to avoid)",    "Buttermilk (try to avoid) 150 ml")
         )
 
         recyclerAdapter = DietPlanAdapter(activity as Context, lossArrayList)

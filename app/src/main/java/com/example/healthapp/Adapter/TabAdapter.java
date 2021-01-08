@@ -14,7 +14,7 @@ import com.example.healthapp.fragments.WeightLoss;
 public class TabAdapter extends FragmentPagerAdapter {
 
     private static final int[] TAB_TITLES =
-            new int[] {R.string.weightLoss ,R.string.weightGain};
+            new int[] {R.string.weightGain ,R.string.weightLoss};
     private final Context mContext;
     public TabAdapter(Context context, FragmentManager fm) {
         super(fm);
