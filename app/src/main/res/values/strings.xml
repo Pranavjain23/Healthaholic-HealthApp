@@ -72,5 +72,11 @@
         <item>Accept mistakes and learn from them for next time. Mistakes are not terrible experiences; they are learning experiences.</item>
         <item>Balance your other dimensions of Wellness.</item>
     </string-array>
+    <string name="weightGain">
+        weightGain
+    </string>
+    <string name="weightLoss">
+        weightLoss
+    </string>
 
 </resources>

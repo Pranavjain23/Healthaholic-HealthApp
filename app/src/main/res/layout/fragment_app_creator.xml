@@ -91,7 +91,7 @@
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="bhoomikagarg@gmail.com"
+                    android:text="bhoomika.garg.9@gmail.com"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -197,7 +197,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAlignment="center"
-        android:text="healthappname" />
+        android:text="Healthaholic" />
 
     <TextView
         android:layout_width="wrap_content"
