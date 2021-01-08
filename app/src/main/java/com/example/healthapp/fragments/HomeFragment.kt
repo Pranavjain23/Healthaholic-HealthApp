@@ -47,8 +47,8 @@ class HomeFragment : Fragment() {
            startActivity(intent)
         }
 
-      /*  dietPlan.setOnClickListener {
-            val fragment = DietPlanFragment()
+        dietPlan.setOnClickListener {
+            val fragment = DietPlan()
             val args = Bundle()
             fragment.arguments = args
             (context as MainActivity).supportFragmentManager.beginTransaction()
@@ -57,7 +57,7 @@ class HomeFragment : Fragment() {
                     fragment
                 ).commit()
         }
-        */
+
 
         breakfastCard.setOnClickListener {
             val fragment = MealMenuFragment()

@@ -22,9 +22,6 @@
             <item
                 android:id="@+id/homeWorkout"
                 android:title="Home Workout"/>
-            <item
-                android:id="@+id/dietPlan"
-                android:title="DIET PLAN"/>
 
 
         </menu>

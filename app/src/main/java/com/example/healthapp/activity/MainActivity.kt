@@ -102,14 +102,7 @@ class MainActivity : AppCompatActivity() {
                    //     supportActionBar?.title = "Home Workout"
                     drawerLayout.closeDrawers()
                 }
-                R.id.dietPlan -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(
-                            R.id.frame,
-                            DietPlan()
-                        ).commit()
-                    drawerLayout.closeDrawers()
-                }
+
                 R.id.share -> {
                     val shareIntent = Intent(Intent.ACTION_SEND)
                     shareIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
