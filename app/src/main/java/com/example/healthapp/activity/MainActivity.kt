@@ -186,6 +186,7 @@ class MainActivity : AppCompatActivity() {
             is Gym_routine_beginner -> openGym()
             is Gym_routine_intermediate -> openGym()
 
+            is MealMenuFragment -> openHome()
             else -> super.onBackPressed()     // Exit the app (default)
         }
     }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.DimensionOfWellnessFragment"
     android:background="@color/colorWhite">
 
@@ -20,191 +21,204 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/physical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="10dp"
+                    android:background="#fafafa">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/physical"
-                    android:layout_width="160dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    >
-                    <LinearLayout
+
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/physical"/>
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@color/colorLightPink">
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/physical"/>
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:text="PHYSICAL WELLNESS"
+                        android:textSize="19sp"/>
+                    </RelativeLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="PHYSICAL"
-                            android:textSize="20sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="WELLNESS"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/emotional"
-                    android:layout_width="160dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@color/colorLightPink">
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/emotional"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="EMOTIONAL"
-                            android:textSize="20sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="WELLNESS"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emotional"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="10dp"
+                    android:background="#fafafa">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/social"
-                    android:layout_width="160dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@color/colorLightPink">
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/social"/>
-
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:text="SOCIAL"
-                            android:textSize="20sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="WELLNESS"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/spiritual"
-                    android:layout_width="160dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true">
+                            android:layout_centerInParent="true"
+                            android:text="EMOTIONAL WELLNESS"
+                            android:textAlignment="textEnd"
+                            android:textSize="19sp"/>
+                    </RelativeLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@color/colorLightPink">
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/spiritual"/>
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/emotional"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="SPIRITUAL"
-                            android:textSize="20sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="WELLNESS"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/social"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/intellectual"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_width="340dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginBottom="60dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@color/colorLightPink">
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/intellectual"
-                            android:padding="10dp"/>
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="10dp"
+                    android:background="#fafafa">
+
+
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/social"/>
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:text="INTELLECTUAL"
-                            android:textSize="20sp"/>
+                            android:layout_centerInParent="true"
+                            android:text="SOCIAL WELLNESS"
+                            android:textSize="19sp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spiritual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="10dp"
+                    android:background="#fafafa">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:text="WELLNESS"/>
+                            android:layout_centerInParent="true"
+                            android:text="SPIRITUAL WELLNESS"
+                            android:textAlignment="textEnd"
+                            android:textSize="19sp"/>
+                    </RelativeLayout>
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/spiritual"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
-            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/intellectual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="10dp"
+                    android:background="#fafafa">
+
+
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/intellectual"/>
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:text="INTELLECTUAL WELLNESS"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
 
