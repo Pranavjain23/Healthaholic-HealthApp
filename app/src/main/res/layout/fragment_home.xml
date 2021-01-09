@@ -70,6 +70,7 @@
         android:id="@+id/btnStepCounter"
         android:layout_below="@id/txtFeatures"
         android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
         android:layout_height="130dp"
         android:layout_margin="10dp"
         >
@@ -102,23 +103,22 @@
                     android:id="@+id/txtPedometer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="23sp"
                     android:layout_centerHorizontal="true"
-                    android:textStyle="bold"
                     android:layout_marginTop="35dp"
+                    android:text="STEP UP"
                     android:textColor="@color/colorWhite"
-                    android:text="STEP UP"/>
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtPedometer"
-                    android:text="STEP COUNTER "
-                    android:textSize="14sp"
                     android:layout_centerHorizontal="true"
+                    android:text="STEP COUNTER "
                     android:textColor="@color/colorWhite"
-                    />
+                    android:textSize="14sp" />
 
             </RelativeLayout>
 
@@ -131,6 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
         android:layout_below="@id/btnStepCounter"
         >
         <LinearLayout
@@ -454,7 +455,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Variety of tasty but health dishes are provided as options for a better health and lifestyle."
-        android:textSize="13sp"
+        android:textSize="10sp"
         android:layout_marginLeft="14dp"
         android:layout_marginRight="14dp"
         android:layout_marginBottom="5dp"
@@ -494,7 +495,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Health plans are strictly created by the specialist Doctors onboard with us"
-        android:textSize="13sp"
+        android:textSize="10sp"
         android:layout_marginLeft="14dp"
         android:layout_marginRight="14dp"
         android:layout_marginBottom="5dp"
@@ -517,6 +518,7 @@
         android:id="@+id/contentWater"
         android:layout_below="@id/txtWater"
         android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
         android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
@@ -564,7 +566,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="60dp"
-        android:textSize="14sp"
+        android:textSize="10sp"
         />
 </RelativeLayout>
 </ScrollView>

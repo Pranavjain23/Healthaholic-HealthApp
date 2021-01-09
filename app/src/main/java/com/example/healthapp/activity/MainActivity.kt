@@ -188,6 +188,9 @@ class MainActivity : AppCompatActivity() {
             is Gym_routine_intermediate -> openGym()
 
             is MealMenuFragment -> openHome()
+            is WeightGain -> openHome()
+            is WeightLoss -> openHome()
+
             else -> super.onBackPressed()     // Exit the app (default)
         }
     }

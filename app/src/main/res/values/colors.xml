@@ -8,4 +8,5 @@
     <color name="black">#000000</color>
     <color name="colorLightPink">#fce4ec</color>
     <color name="colorBackground">#faf3f2</color>
+    <color name="grey">#e0e0e0</color>
 </resources>

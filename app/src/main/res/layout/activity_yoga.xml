@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:text="Next"
         android:layout_marginRight="20dp"
-        android:layout_above="@+id/bottom_of_page"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/background_next"/>
 
@@ -37,20 +38,12 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_above="@+id/bottom_of_page"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:text="Back"
         android:visibility="invisible"
         android:background="@drawable/background_prev"/>
 
-    <TextView
-        android:id="@+id/bottom_of_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Do each yoga asana for 2min minimum"
-        android:textColor="@color/black"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        />
 </RelativeLayout>
 

@@ -12,21 +12,29 @@
         android:layout_width="match_parent"
         android:background="@color/colorWhite"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dimensions of Wellness"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="22sp"/>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/physical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="5dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,7 +61,7 @@
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
                         android:text="PHYSICAL WELLNESS"
-                        android:textSize="19sp"/>
+                        android:textSize="18sp"/>
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -65,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="5dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -86,8 +94,7 @@
                             android:textStyle="bold"
                             android:layout_centerInParent="true"
                             android:text="EMOTIONAL WELLNESS"
-                            android:textAlignment="textEnd"
-                            android:textSize="19sp"/>
+                            android:textSize="18sp"/>
                     </RelativeLayout>
 
                     <ImageView
@@ -105,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="5dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -133,7 +140,7 @@
                             android:textStyle="bold"
                             android:layout_centerInParent="true"
                             android:text="SOCIAL WELLNESS"
-                            android:textSize="19sp"/>
+                            android:textSize="18sp"/>
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -145,7 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="5dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -166,8 +173,7 @@
                             android:textStyle="bold"
                             android:layout_centerInParent="true"
                             android:text="SPIRITUAL WELLNESS"
-                            android:textAlignment="textEnd"
-                            android:textSize="19sp"/>
+                            android:textSize="18sp"/>
                     </RelativeLayout>
 
                     <ImageView
@@ -185,8 +191,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="5dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"

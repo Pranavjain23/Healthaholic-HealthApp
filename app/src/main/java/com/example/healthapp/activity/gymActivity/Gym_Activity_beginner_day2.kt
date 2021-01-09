@@ -64,7 +64,7 @@ class Gym_Activity_beginner_day2 : AppCompatActivity() {
             mDots[i] = TextView(this)
             mDots[i]!!.text = Html.fromHtml("&#8226;")
             mDots[i]!!.textSize = 35f
-            mDots[i]!!.setTextColor(resources.getColor(R.color.colorWhite))
+            mDots[i]!!.setTextColor(resources.getColor(R.color.grey))
             mDotLayout.addView(mDots[i])
         }
         if (mDots.isNotEmpty()) {
