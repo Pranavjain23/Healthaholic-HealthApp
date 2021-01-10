@@ -24,7 +24,7 @@ class SliderAdapter_gym_advance_day1(val context: Context) : PagerAdapter() {
         R.drawable.barbell_bench_press,
         R.drawable.incline_bench_press,
         R.drawable.dips,
-        R.drawable.pulldown,
+        R.drawable.pullups,
         R.drawable.pendlay_row,
         R.drawable.pulldown
     )
@@ -32,42 +32,35 @@ class SliderAdapter_gym_advance_day1(val context: Context) : PagerAdapter() {
     val slide_headings = arrayOf(
         "Barbell Bench Press",
         "Incline Dumbbell Press",
-        "Dips – 3 sets of 6-10 reps" ,
-
-        "Pullups – 3 sets of 5-8 reps" ,
-        "Pendlay Rows – 3 sets of 6-10 reps" ,
+        "Dips " ,
+        "Pullups " ,
+        "Pendlay Rows" ,
         "Pulldowns "
     )
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-        "3 sets" ,
+        " 3 sets",
+        " 3 sets",
+        " 3 sets" ,
         " 3 sets " ,
         " 3 sets" ,
-        "2 sets"
+        " 3 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-        "15 reps",
-        "6-10 reps" ,
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        " 12 reps",
+        " 15 reps",
+        " 6-10 reps" ,
+        " 5-8 reps" ,
+        " 6-10 reps" ,
+        " 10-15 reps"
     )
 
     val slide_descs = arrayOf(
-        "Lie on the bench with your eyes under the bar\n" +
-                "Grab the bar with a medium grip-width (thumbs around the bar!)\n" +
-                "Unrack the bar by straightening your arms\n" +
-                "Lower the bar to your mid-chest\n" +
-                "Press the bar back up until your arms are straight\n" +
-                "Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up. Bench sets of five reps every StrongLifts 5×5 workout A.\n"
-        ,
-        "The Incline Bench Press primarily works the clavicular head of the pectoralis major, or the upper portion of your chest. It also works the anterior deltoid (front portion of the shoulder) and the triceps (backside of your arm).",
-        "A dip is an upper-body strength exercise. Narrow, shoulder-width dips primarily train the triceps, with major synergists being the anterior deltoid, the pectoralis muscles, and the rhomboid muscles of the back.",
-        "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up. As this happens, the elbows flex and the shoulders adduct and extend to bring the elbows to the torso",
-        "The Pendlay row is still a type of barbell row, so it targets the same areas – principally the lats, but most of the upper and lower back muscles are also enlisted in the movement. It is a more demanding lift than the standard barbell row, owing to the fact you have to lift the bar from the ground each time.",
-        "The pulldown exercise is a strength training exercise designed to develop the latissimus dorsi muscle. It performs the functions of downward rotation and depression of the scapulae combined with adduction and extension of the shoulder joint."
+        "Lie on the bench with your eyes under the bar. Grab the bar with a medium grip-width (thumbs around the bar!). Unrack the bar by straightening your arms. Lower the bar to your mid-chest. Press the bar back up until your arms are straight. Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
+        "Position your body on an incline bench on a 30-45 degree angle. Grab a barbell with an overhand grip that's shoulder-width apart and hold it above your chest. ... Lower the bar straight down in a slow, controlled movement to your chest. Pause, then press the bar in a straight line back up to the starting position",
+        "Lean forward. Put your elbows a little bit wider than your shoulders. Move knees slightly forward, so your body is shaped like a \"C\" Contract your abs to maintain the position. Keep your head in line with your spine as you go down.",
+        "Grasp the bar with an overhand grip with your hands just wider than shoulder-width apart. Let your body hang straight down with your arms fully extended. Pull up and squeeze your lats until your chin is over the bar, before lowering slowly to the start position without swinging.",
+       "Bend forwards, hinging at the hips, until your back is parallel to the ground. Your knees should be slightly bent. Grasp the bar using an overhand grip with your hands just wider than shoulder-width apart. Brace your core and lift the weight up to your abdomen by squeezing your shoulder blades together.",
+        "Grasp the bar with a wide grip with an overhand, knuckles up grip. Other positions and grips are possible but start with this standard position. Pull the bar down until it's approximately level with the chin. Exhale on down motion. While shifting just slightly backward is OK, aim to keep your upper torso stationary. Keep your feet flat on the floor and engage your abs as you pull. The bottom of the motion should be where your elbows can't move downward any more without moving backward. Be sure to stop at that point and do not go lower. Squeeze the shoulder blades together while maintaining square shoulders. From the bottom position with the bar close to your chin, slowly return the bar to the starting position while controlling its gradual ascent. Don't let it crash into the weight plates."
     )
 
 

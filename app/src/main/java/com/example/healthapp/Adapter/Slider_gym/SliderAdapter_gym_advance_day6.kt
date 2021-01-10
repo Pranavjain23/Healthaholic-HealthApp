@@ -29,11 +29,11 @@ class SliderAdapter_gym_advance_day6(val context: Context) : PagerAdapter() {
     )
 
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-        "3 sets" ,
+        " 5 sets",
+        " 3 sets",
         " 3 sets" ,
-        "2 sets"
+        " 3 sets" ,
+        " 3 sets"
     )
     val slide_reps = arrayOf(
         "12 reps",
@@ -43,28 +43,19 @@ class SliderAdapter_gym_advance_day6(val context: Context) : PagerAdapter() {
         "10 reps"
     )
     val slide_headings = arrayOf(
-        "Barbell Rows – 5 sets of 20-8 (Pyramiding) reps" ,
-        "Barbell Shrugs – 3 sets of 15-20 reps" ,
-        "Rack Deadlifts – 3 sets of 10-12 reps" ,
-        "Pullups – 3 sets of 6-10 reps" ,
-        "Pulldowns – 3 sets of 6-10 reps"
+        "Barbell Rows " ,
+        "Barbell Shrugs " ,
+        "Rack Deadlifts" ,
+        "Pullups " ,
+        "Pulldowns"
 
     )
 
     val slide_descs = arrayOf(
-        "Stand with your mid-foot under the bar (medium stance)\n" +
-                "Bend over and grab the bar (palms down, medium-grip)\n" +
-                "Unlock your knees while keeping your hips high\n" +
-                "Lift your chest and straighten your back\n" +
-                "Pull the bar against your lower chest\n" +
-                "\n" ,
-        "Step 1 Standing with your feet shoulder-width apart, place a barbell in front of your thighs, hands shoulder-width apart, palms facing your body, and arms fully extended.\n Step 2 Keeping your arms straight, shrug your shoulders as high as you can. Pause, then lower to the start position.",
-        "The partial range of motion (top half of a deadlift) of the rack pull targets the trapezius and back muscles to a great extend due to (1) the lifter lifting heavier loads than normal, and (2) not being as bent over where they could potentially used more of their quads, hamstrings, and glutes to assist more in the lift.",
-        "Grab The Bar. Grip it about shoulder-width apart.\n" +
-                "Hang. Raise your feet off the floor by bending your knees.\n" +
-                "Pull. Pull yourself up by pulling your elbows down to the floor.\n" +
-                "Pass The bar. Pull yourself all the way up until your chin passes the bar.\n" +
-                "Repeat. Lower yourself all the way down until your arms are straight.",
+        "Stand with your mid-foot under the bar. Bend over and grab the bar (palms down, medium-grip).Unlock your knees while keeping your hips high. Lift your chest and straighten your back. Pull the bar against your lower chest. ",
+        "Standing with your feet shoulder-width apart, place a barbell in front of your thighs, hands shoulder-width apart, palms facing your body, and arms fully extended. Keeping your arms straight, shrug your shoulders as high as you can. Pause, then lower to the start position.",
+        "When the bar is in your favoured position, grasp it with your palms facing towards you and your hands shoulder-width apart. Engage your hamstrings by pushing your hips back. Keeping your back straight and looking forwards throughout the movement, lift the weight by driving your hips forwards and straightening your knees. Pull your shoulders back at the top of the movement, then slowly reverse the movement and lower the bar back into the power rack.",
+        "Grab The Bar. Grip it about shoulder-width apart. Hang. Raise your feet off the floor by bending your knees. Pull yourself up by pulling your elbows down to the floor. Pass The bar. Pull yourself all the way up until your chin passes the bar. Repeat. Lower yourself all the way down until your arms are straight.",
         "Hold a short bar above your head with an overhand grip, palms facing forwards. Pull the bar down by bringing your elbows in to your sides. Then press the bar down, keeping your elbows by your sides. Reverse the movement to return to the starting position."
     )
 
