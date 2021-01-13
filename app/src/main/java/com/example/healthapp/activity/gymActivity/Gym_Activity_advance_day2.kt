@@ -43,10 +43,11 @@ class Gym_Activity_advance_day2 : AppCompatActivity() {
 
         mSlideViewPager.addOnPageChangeListener(viewListener)
         mNextBtn.setOnClickListener {
-            mSlideViewPager!!.currentItem = mCurrentPage + 1
             if( mNextBtn.text == "Finish"){
                 finish()
             }
+            mSlideViewPager!!.currentItem = mCurrentPage + 1
+
         }
 
 
@@ -63,7 +64,7 @@ class Gym_Activity_advance_day2 : AppCompatActivity() {
             mDots[i] = TextView(this)
             mDots[i]!!.text = Html.fromHtml("&#8226;")
             mDots[i]!!.textSize = 35f
-            mDots[i]!!.setTextColor(resources.getColor(R.color.grey))
+            mDots[i]!!.setTextColor(resources.getColor(R.color.black))
             mDotLayout.addView(mDots[i])
         }
         if (mDots.isNotEmpty()) {

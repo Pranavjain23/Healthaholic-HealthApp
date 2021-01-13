@@ -25,45 +25,38 @@ class SliderAdapter_gym_advance_day2 (val context: Context) : PagerAdapter() {
         R.drawable.legpress,
         R.drawable.stiffed_legged_deadlift,
         R.drawable.hamstring_curls,
-        R.drawable.calf_raises
+        R.drawable.calves
 
     )
 
     val slide_headings = arrayOf(
         "Squats",
-        "Leg Press – 3 sets of 6-10 reps" ,
-        "Stiff-Legged Deadlift – 5 sets of 5 reps" ,
-        "Hamstring Curls – 3 sets of 6-8 reps",
-        "Calf-Raise – 5 sets of 10 reps"
+        "Leg Press " ,
+        "Stiff-Legged Deadlift" ,
+        "Hamstring Curls ",
+        "Calf-Raise "
     )
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-        "3 sets" ,
+        " 3 sets",
+        " 3 sets",
+        " 5 sets" ,
         " 3 sets " ,
-        "2 sets"
+        " 5 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-        "15 reps",
-        "6-10 reps" ,
-        "5-8 reps" ,
-        "10 reps"
+        " 20 reps",
+        " 10 reps",
+        " 5 reps" ,
+        " 5-8 reps" ,
+        " 10 reps"
     )
 
     val slide_descs = arrayOf(
-        "Stand with your feet slightly wider than your hips.\n" +
-                "Your toes should be pointed slightly outward – about 5 to 20 degrees outward (the wider your stance, the more you’ll want to rotate your feet outward).\nLook straight ahead and pick a spot on the wall in front of you.\n" +
-                "Look at this spot the entire time you squat, not looking down at the floor or up at the ceiling.",
-        "Lie on a mat face up. Lift your feet off of the mat. ...\n" +
-                "Wrap the band around your feet and hold the ends. Keep your feet side by side.\n" +
-                "Press your feet against the bands until your legs are straight.\n" +
-                "Bend your knees to return to a 90-degree angle.\n",
+        "Stand with your feet slightly wider than your hips. Your toes should be pointed slightly outward – about 5 to 20 degrees outward (the wider your stance, the more you’ll want to rotate your feet outward).\nLook straight ahead and pick a spot on the wall in front of you. Look at this spot the entire time you squat, not looking down at the floor or up at the ceiling.",
+        "In the incline leg press machine, you sit in a low, reclined seat with your feet pressed up against a raised platform. You can add weight plates to the platform to adjust the resistance and make it more difficult to push the platform up and away from you",
+
         "Stand with your feet shoulder-width apart holding a barbell in an overhand grip (palms facing you). Your knees should be slightly bent and the aim is to maintain this slight degree of flex throughout the movement. Bend at your hips and lower the barbell, keeping your back straight.",
-        "Stand with your feet hip-width apart. Place your hands on your waist or on a chair for balance. Shift your weight onto your left leg.\n" +
-                "Slowly bend your right knee, bringing your heel toward your butt. Keep your thighs parallel.\n" +
-                "Slowly lower your foot.\n" +
-                "Repeat with the other leg.",
+        " Lie on your stomach, hook the back of your lower legs around a lever attached to a weight stack and pull the weight toward your buttocks, trying to bring your heels as close to your gluteal muscles as possible.",
         "Start in a standing position with your feet at hip width and your arms by your sides. Keep a straight back and good upright posture, looking straight ahead. From here, contract your calf muscles, hamstrings and glutes so that you raise up on to your toes by lifting your heels up as high as you can."
     )
 

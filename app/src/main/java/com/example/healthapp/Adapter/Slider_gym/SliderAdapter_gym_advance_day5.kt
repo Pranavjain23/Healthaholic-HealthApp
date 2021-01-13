@@ -31,51 +31,40 @@ class SliderAdapter_gym_advance_day5  (val context: Context) : PagerAdapter() {
     )
 
     val slide_headings = arrayOf(
-        "Flat Dumbbell Press – 5 sets of 20-6 (Pyramiding) reps" ,
-        "Incline Dumbbell Press – 3 sets of 6-10 reps" ,
-        "Hammer Strength Press – 3 sets of 10 reps" ,
-        "Cable Flys – 3 sets of 12-15 reps" ,
-        "Lateral Raises – 5 sets of 15-20 reps" ,
-        "Reverse-Grip Pull-Downs – 5 sets of 15-20 reps"
+        "Flat Dumbbell Press" ,
+        "Incline Dumbbell Press " ,
+        "Hammer Strength Press" ,
+        "Cable Flys " ,
+        "Lateral Raises" ,
+        "Reverse-Grip Pull-Downs"
 
     )
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-        "3 sets" ,
-        " 3 sets " ,
+        " 5 sets",
+        " 3 sets",
         " 3 sets" ,
-        "2 sets"
+        " 3 sets " ,
+        " 5 sets" ,
+        " 5 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-        "15 reps",
-        "6-10 reps" ,
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        " 9-10 reps",
+        " 15 reps",
+        " 6-10 reps" ,
+        " 12-15 reps" ,
+        " 12-15 reps" ,
+        " 15-20 reps"
     )
 
     val slide_descs = arrayOf(
-        "Sit on a flat bench, hold two dumbbells, and keep them in the resting position on top of the thighs so that your palms are facing each other.\n" +
-                "Push your thighs up to assist in raising the weights. Lift the dbs up and hold them at your shoulder\n" +
-                "Make sure that your palms face away from you by rotating your wrists forward. Keep the dumbbells positioned at the sides of the chest while creating an angle of 90 degrees between your upper arm and forearm. It is the initial position.\n" +
-                "Press the dbs up with the help of your chest to lockout position at the top of the movement. Squeeze your chest and hold the position for a second.\n" +
-                "Slowly lower the weights under control.\n" +
-                "Repeat the steps for the required number of reps of your training regimen.",
+        "Sit on a flat bench, hold two dumbbells, and keep them in the resting position on top of the thighs so that your palms are facing each other. Push your thighs up to assist in raising the weights. Lift the dbs up and hold them at your shoulder. Make sure that your palms face away from you by rotating your wrists forward. Keep the dumbbells positioned at the sides of the chest while creating an angle of 90 degrees between your upper arm and forearm.",
 
-        "Lie on a bench set to a 45-degree incline, holding a pair of dumbbells at arm’s length above your chest, palms forward.\n" +
-                "Keeping your core braced and your elbows close to your body (i.e., not flared), lower the dumbbells to the sides of your chest.\n" +
-                "Pause, and then push the weights back up to the starting position.",
+        "Lie on a bench set to a 45-degree incline, holding a pair of dumbbells at arm’s length above your chest, palms forward. Keeping your core braced and your elbows close to your body (i.e., not flared), lower the dumbbells to the sides of your chest. Pause, and then push the weights back up to the starting position.",
+        "Sit upon the seat and your upper chest should be just above the handles. Push the foot lever until you grasp the lever. Grasp the handles with a wide overhand grip and keep your elbows out to the sides. Release the foot lever, press the hand lever out and try to fully extend your arms. Return the weight by the time your chest muscles are stretched.",
 
-        "Lie on a flat bench, holding a dumbbell in each hand. Bring the dumbbells up to the sides of your chest, keeping your grip neutral. Press the dumbbells up above your chest until your arms are fully extended. Bring the weights back down slowly until you feel a stretch in your chest, then press them overhead again.",
+        "Set the pulleys on a dual-cable machine to chest height, and stand between the two stacks. Grab the handles. Keeping your back straight and core engaged, raise your arms out to your sides, palms facing forward, and walk a step or two forward in order to create tension on the cables. Stand with one foot in front of the other. Bend your elbows slightly, making sure not to let them travel behind your shoulders. This is your starting position. Pull your hands toward each other in wide arcs in front of you, pausing when your hands touch before slowly returning to the starting position. Alternate your forward foot with each set.",
 
-        "Set the pulleys on a dual-cable machine to chest height, and stand between the two stacks. Grab the handles.\n" +
-                "Keeping your back straight and core engaged, raise your arms out to your sides, palms facing forward, and walk a step or two forward in order to create tension on the cables. Stand with one foot in front of the other.\n" +
-                "Bend your elbows slightly, making sure not to let them travel behind your shoulders. This is your starting position.\n" +
-                "Pull your hands toward each other in wide arcs in front of you, pausing when your hands touch before slowly returning to the starting position. Alternate your forward foot with each set.",
-
-        " Step 1 Standing in a shoulder-width stance, grab a pair of dumbbells with palms facing inward and let them hang at your sides. Step 2 Raise your arms out to the sides until they're at shoulder level. Pause, then lower the weights back to the starting position.",
+        "Standing in a shoulder-width stance, grab a pair of dumbbells with palms facing inward and let them hang at your sides. Raise your arms out to the sides until they're at shoulder level. Pause, then lower the weights back to the starting position.",
 
         "To do the reverse-grip pulldown, grab the bar with an underhand grip with your hands spaced about shoulder-width apart. Your arms should be fully extended in the start position and your back should be slightly arched with your chest up high."
     )

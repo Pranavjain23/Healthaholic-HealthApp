@@ -7,10 +7,12 @@
 
     <ImageView
         android:id="@+id/imgYogaPose"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:src="@drawable/yogapose" />
 
     <TextView
@@ -20,6 +22,7 @@
         android:text="Gym exercise Name"
         android:layout_below="@id/imgYogaPose"
         android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textSize="22sp"
