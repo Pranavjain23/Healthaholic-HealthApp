@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
-import com.example.healthapp.Adapter.SliderAdapter_homeworkout
+import com.example.healthapp.Adapter.SliderAdapterHomeworkout
 import com.example.healthapp.R
 
 class HomeWorkoutActivity : AppCompatActivity() {
@@ -32,7 +32,7 @@ class HomeWorkoutActivity : AppCompatActivity() {
         mNextBtn = findViewById(R.id.nextBtn)
         mBackBtn = findViewById(R.id.prevBtn)
 
-        val sliderAdapter = SliderAdapter_homeworkout(this)
+        val sliderAdapter = SliderAdapterHomeworkout(this)
 
         mSlideViewPager.adapter = sliderAdapter
 

@@ -36,19 +36,19 @@ class WeightLoss : Fragment() {
             Diet_plan_model("⚫ Morning","Between 7:30 am to 8 am "," Lemon tea/ Ginger Tea/Coffee "," milk 1 cup (150 ml)")
         )
         lossArrayList.add(
-            Diet_plan_model("Breakfast","Between 8:30 am to 9:30 am","Eggs omelette with spinach and shredded vegetables cooked ","Idlis / dosa/ Poha/ upma 1 cup cooked")
+            Diet_plan_model("⚫ Breakfast","Between 8:30 am to 9:30 am","Eggs omelette with spinach and shredded vegetables cooked ","Idlis / dosa/ Poha/ upma 1 cup cooked")
         )
         lossArrayList.add(
-            Diet_plan_model("Lunch","Between 1 pm to 2 pm ","Salad with fresh vegetables and curd 1 cup ,Cooked vegetables/ greens(150gm),Phulkas ( multigrain ) 1 piece ,Rice ½ cup ","A sandwich with a cup of vegetables and some proteins like chicken,mushroom,soya,fish etc ")
+            Diet_plan_model("⚫ Lunch","Between 1 pm to 2 pm ","Salad with fresh vegetables and curd 1 cup ,Cooked vegetables/ greens(150gm),Phulkas ( multigrain ) 1 piece ,Rice ½ cup ","A sandwich with a cup of vegetables and some proteins like chicken,mushroom,soya,fish etc ")
         )
         lossArrayList.add(
-            Diet_plan_model("Evening","Between 4 pm to 5 pm","Fruit/ sprouts/ cucumber –carrot slices/ vegetable soup ","Tea with 1/2 cup of snacks(nuts)")
+            Diet_plan_model("⚫ Evening","Between 4 pm to 5 pm","Fruit/ sprouts/ cucumber –carrot slices/ vegetable soup ","Tea with 1/2 cup of snacks(nuts)")
         )
         lossArrayList.add(
-            Diet_plan_model("Dinner","Between 7 pm to 8 pm","salad with fresh vegetables 1 cup ,Methi Dal / sambar/rasam (1 cup) ,Phulkas 1-2 piece ,Cooked vegetables(150 gms)","2 stuffed roti(any varities)")
+            Diet_plan_model("⚫ Dinner","Between 7 pm to 8 pm","salad with fresh vegetables 1 cup ,Methi Dal / sambar/rasam (1 cup) ,Phulkas 1-2 piece ,Cooked vegetables(150 gms)","2 stuffed roti(any varities)")
         )
         lossArrayList.add(
-            Diet_plan_model("Post dinner(Bedtime)","Between 9 pm to 10 pm","Milk (try to avoid)",    "Buttermilk (try to avoid) 150 ml")
+            Diet_plan_model("⚫ Post dinner(Bedtime)","Between 9 pm to 10 pm","Milk (try to avoid)",    "Buttermilk (try to avoid) 150 ml")
         )
 
         recyclerAdapter = DietPlanAdapter(activity as Context, lossArrayList)
