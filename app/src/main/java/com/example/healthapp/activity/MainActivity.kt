@@ -126,6 +126,18 @@ class MainActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                 }
 
+                R.id.feedbackUser -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(
+                            R.id.frame,
+                            FormFeedbackFragment()
+                        )                                                                          // dashboard fragment is replacing the blank frame
+                        .commit()
+
+                   // supportActionBar?.title = (getString(R.string.languagetitle))
+                    drawerLayout.closeDrawers()
+                }
+
             }
             return@setNavigationItemSelectedListener true
 

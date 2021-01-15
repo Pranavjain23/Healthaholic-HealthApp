@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FormFeedbackFragment"
+    android:background="@color/colorWhite">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:layout_marginTop="5dp"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Contact Us"
+           android:textSize="24sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Fill the form to reach us!"
+           android:textSize="15sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           />
+
+       <EditText
+           android:id="@+id/userName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/formfeedbackbox"
+           android:hint="Name"
+           android:inputType="textPersonName"
+           android:padding="10dp"
+           android:maxLines="1"
+           android:layout_marginTop="5dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Age"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="8dp"
+           />
+
+       <EditText
+           android:id="@+id/userAge"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/formfeedbackbox"
+           android:hint="Age"
+           android:maxLength="3"
+           android:inputType="number"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gender"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="8dp"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="6"
+           android:padding="10dp">
+
+           <RadioButton
+               android:id="@+id/userMale"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:textSize="16sp"
+               android:text="Male"/>
+
+           <RadioButton
+               android:id="@+id/userFemale"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:textSize="16sp"
+               android:text="Female"/>
+
+           <RadioButton
+               android:id="@+id/userOthers"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:textSize="16sp"
+               android:text="Others"/>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Email"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="8dp"
+           />
+
+       <EditText
+           android:id="@+id/userEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/formfeedbackbox"
+           android:hint="username@healthaholic.com"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           android:inputType="textEmailAddress"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Phone Number"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="8dp"
+           />
+
+       <EditText
+           android:id="@+id/userPhone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/formfeedbackbox"
+           android:hint="Phone Number"
+           android:maxLength="10"
+           android:padding="10dp"
+           android:inputType="phone"
+           android:layout_marginTop="5dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Any Query/Feedback"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="8dp"
+           />
+
+       <EditText
+           android:id="@+id/userQuery"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/formfeedbackbox"
+           android:hint="Query/Feedback goes here"
+           android:inputType="text"
+           android:maxLines="8"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           />
+
+       <Button
+           android:id="@+id/btnUserSubmit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SUBMIT"
+           android:textSize="17sp"
+           android:layout_gravity="end"
+           android:padding="10dp"
+           android:layout_marginTop="10dp"/>
+   </LinearLayout>
+
+
+</ScrollView>
