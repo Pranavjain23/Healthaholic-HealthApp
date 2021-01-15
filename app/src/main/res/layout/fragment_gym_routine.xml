@@ -4,29 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite">
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
         android:id="@+id/gym_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GYM WORKOUT ROUTINE"
+        android:text="Find Your"
         android:layout_marginTop="15dp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp" />
     <TextView
         android:id="@+id/gymNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="STRICTLY FOLLOW THE DAY ROUTINE"
+        android:text="Daily Workout"
+        android:layout_marginLeft="20dp"
         android:layout_below="@id/gym_heading"
-        android:textColor="@color/colorPrimary"
-        android:layout_centerHorizontal="true"
-        android:textSize="12sp" />
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_gym"

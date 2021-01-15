@@ -27,40 +27,40 @@ class SliderAdapter_gym_intermediate_day3(val context: Context) : PagerAdapter()
         R.drawable.calves
     )
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-
-        " 3 sets" ,
-        "2 sets"
+        "4 sets",
+        "4 sets",
+        "4 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        "15 (Pyramiding) reps",
+        "15 reps" ,
+        "15 reps" ,
+        "15 reps"
     )
 
     val slide_headings = arrayOf(
-        "Front Squats – 5 sets of 20-8 (Pyramiding) reps" ,
-        "Leg Extensions – 5 sets of 10 reps" ,
-        "Hamstring Curls – 5 sets of 6-10 reps" ,
-        "Standing Calf Raise – 3 sets of 8-12 reps"
+        "Front Squats" ,
+        "Leg Extensions" ,
+        "Hamstring Curls" ,
+        "Standing Calf Raise"
 
     )
 
     val slide_descs = arrayOf(
-        "Begin with the barbell across the front side of your shoulders. Place your fingertips under the barbell just outside of your shoulders and drive your elbows up. Keeping your chest up and core tight, bend at your hips and knees to lower into a squat until your thighs are parallel to the ground",
+        "Begin with the barbell across the front side of your shoulders.\n" +
+                "Place your fingertips under the barbell just outside of your shoulders and drive your elbows up.\n" +
+                "Keeping your chest up and core tight, bend at your hips and knees to lower into a squat until your thighs are parallel to the ground",
         "Place your hands on the hand bars.\n" +
-                "Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back.\n" +
-                "Exhale and lower the weight back to starting position.\n" +
-                "Do three sets of eight to 12 repetitions.",
-        "Lie on your back. Put your calves and heels on a stability ball. ...\n" +
+                "Lift the weight while exhaling until your legs are almost straight.\n" +
+                "Do not lock your knees. Keep your back against the backrest and do not arch your back.\n" +
+                "Exhale and lower the weight back to starting position.\n",
+        "Lie on your back. Put your calves and heels on a stability ball.\n" +
                 "Move your hips upward until your body is straight. Engage your glutes.\n" +
-                "Slowly lift your hips and bend your knees. ...\n" +
-                "Extend your knees and lower your hips and back to the floor.\n" +
-                "Complete 12 to 15 reps.",
-        "Stand up straight, then push through the balls of your feet and raise your heel until you are standing on your toes. Then lower slowly back to the start."
+                "Slowly lift your hips and bend your knees.\n" +
+                "Extend your knees and lower your hips and back to the floor.\n",
+        "Stand up straight, then push through the balls of your feet and raise your heel until you are standing on your toes.\n" +
+                "Then lower slowly back to the start."
 
     )
 

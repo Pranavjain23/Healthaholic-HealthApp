@@ -40,20 +40,20 @@ class SliderAdapter_gym_advance_day5  (val context: Context) : PagerAdapter() {
 
     )
     val slide_sets = arrayOf(
-        " 5 sets",
-        " 3 sets",
-        " 3 sets" ,
-        " 3 sets " ,
-        " 5 sets" ,
-        " 5 sets"
+        "5 sets",
+        "3 sets",
+        "3 sets" ,
+        "3 sets " ,
+        "5 sets" ,
+        "5 sets"
     )
     val slide_reps = arrayOf(
-        " 9-10 reps",
-        " 15 reps",
-        " 6-10 reps" ,
-        " 12-15 reps" ,
-        " 12-15 reps" ,
-        " 15-20 reps"
+        "9-10 reps",
+        "15 reps",
+        "6-10 reps" ,
+        "12-15 reps" ,
+        "12-15 reps" ,
+        "15-20 reps"
     )
 
     val slide_descs = arrayOf(

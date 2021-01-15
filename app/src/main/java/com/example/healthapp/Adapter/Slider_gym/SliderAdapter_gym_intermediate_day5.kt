@@ -27,25 +27,23 @@ class SliderAdapter_gym_intermediate_day5(val context: Context) : PagerAdapter()
         R.drawable.pulldown
     )
     val slide_sets = arrayOf(
-        "3 sets",
-
-        " 3 sets " ,
-        " 3 sets" ,
-        "2 sets"
+        "4 sets",
+        "4 sets " ,
+        "3 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-
-        "5-8 reps" ,
-        "6-10 reps" ,
+        "15 reps",
+        "15 reps" ,
+        "10 reps" ,
         "10 reps"
     )
 
     val slide_headings = arrayOf(
-        "Barbell Rows – 5 sets of 20-8 (Pyramiding) reps" ,
-        "Barbell Shrugs – 3 sets of 15-20 reps" ,
-        "Pullups – 3 sets of 6-10 reps" ,
-        "Pulldowns – 3 sets of 6-10 reps"
+        "Barbell Rows" ,
+        "Barbell Shrugs" ,
+        "Pullups" ,
+        "Pulldowns"
 
     )
 
@@ -57,10 +55,10 @@ class SliderAdapter_gym_intermediate_day5(val context: Context) : PagerAdapter()
                 "Pull the bar against your lower chest\n" +
                 "\n" ,
         "Step 1 Standing with your feet shoulder-width apart, place a barbell in front of your thighs, hands shoulder-width apart, palms facing your body, and arms fully extended.\n Step 2 Keeping your arms straight, shrug your shoulders as high as you can. Pause, then lower to the start position.",
-        "Grab The Bar. Grip it about shoulder-width apart. ...\n" +
-                "Hang. Raise your feet off the floor by bending your knees. ...\n" +
-                "Pull. Pull yourself up by pulling your elbows down to the floor. ...\n" +
-                "Pass The bar. Pull yourself all the way up until your chin passes the bar. ...\n" +
+        "Grab The Bar. Grip it about shoulder-width apart.\n" +
+                "Hang. Raise your feet off the floor by bending your knees.\n" +
+                "Pull. Pull yourself up by pulling your elbows down to the floor.\n" +
+                "Pass The bar. Pull yourself all the way up until your chin passes the bar.\n" +
                 "Repeat. Lower yourself all the way down until your arms are straight.",
         "Hold a short bar above your head with an overhand grip, palms facing forwards. Pull the bar down by bringing your elbows in to your sides. Then press the bar down, keeping your elbows by your sides. Reverse the movement to return to the starting position."
     )

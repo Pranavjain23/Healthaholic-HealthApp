@@ -26,31 +26,30 @@ class SliderAdapter_gym_intermediate_day4(val context: Context) : PagerAdapter()
         R.drawable.dumbell_lateral_rise
     )
     val slide_sets = arrayOf(
-        "3 sets",
-
-        " 3 sets" ,
-        "2 sets"
+        "4 sets",
+        "4 sets" ,
+        "4 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-
-        "6-10 reps" ,
-        "10 reps"
+        "15 reps",
+        "15 reps" ,
+        "15 reps"
     )
 
     val slide_headings = arrayOf(
-        "Barbell Bench Press – 3 sets of 10, 10, 8 reps",
-        "Tricep Kickback – 3 sets of 10 reps",
-        "One Arm Cable Lateral Raise – 3 sets of 12 reps"
+        "Barbell Bench Press",
+        "Tricep Kickback",
+        "One Arm Cable Lateral Raise"
     )
 
     val slide_descs = arrayOf(
         "Lie on the bench with your eyes under the bar\n" +
-                "   Grab the bar with a medium grip-width (thumbs around the bar!)\n" +
-                "    Unrack the bar by straightening your arms\n" +
-                "    Lower the bar to your mid-chest\n" +
-                "   Press the bar back up until your arms are straight\n" +
-                "   Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
+                "Grab the bar with a medium grip-width (thumbs around the bar!)\n" +
+                "Unrack the bar by straightening your arms\n" +
+                "Lower the bar to your mid-chest\n" +
+                "Press the bar back up until your arms are straight\n" +
+                "Hold the weight for a second at the top, with straight arms. Breathe.\n" +
+                " Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
 
         " Hold a dumbbell in each hand with your palms facing in toward each other, keeping your knees bent slightly.\n" +
                 "Engage your core and maintain a straight spine as you hinge forward at the waist, bringing your torso almost parallel to the floor.\n" +

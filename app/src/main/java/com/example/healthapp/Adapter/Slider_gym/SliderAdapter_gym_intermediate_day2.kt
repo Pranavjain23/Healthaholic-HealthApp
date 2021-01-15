@@ -28,38 +28,42 @@ class SliderAdapter_gym_intermediate_day2(val context: Context) : PagerAdapter()
     )
 
     val slide_sets = arrayOf(
-        "3 sets",
-        "3 sets",
-
-        " 3 sets" ,
-        "2 sets"
+        "4 sets",
+        "4 sets",
+        "4 sets" ,
+        "4 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        "15 reps",
+        "15 reps" ,
+        "15 reps" ,
+        "15 reps"
     )
     val slide_headings = arrayOf(
-        "Lat Pull Down – 3 sets of 10 reps",
-        "Machine Reverse Fly – 3 sets of 10 reps",
-        "Standing Barbell Curl – 3 sets of 8-10 reps",
-        "Preacher Curl – 3 sets of 10 reps"
+        "Lat Pull Down",
+        "Machine Reverse Fly",
+        "Standing Barbell Curl",
+        "Preacher Curl"
 
     )
 
     val slide_descs = arrayOf(
-        "Keep your chin back and chest up as you pull the bar down, squeezing your shoulder blades down and back. Pause at the bottom of the movement (when the bar is at chest height), and then raise the bar as high as you can go. That's the movement!",
+        "Keep your chin back and chest up as you pull the bar down, squeezing your shoulder blades down and back.\n" +
+                "Pause at the bottom of the movement (when the bar is at chest height), and then raise the bar as high as you can go.\n" +
+                "That's the movement!",
         "Sit up tall and relax your neck and shoulders. Your feet should be flat on the floor.\n" +
                 "Grab the handles so that your palms are facing forward. Note that some machines have a foot bar that you need to push in order to release the handles and bring them forward.\n" +
                 "Press your arms together in front of your chest with a slow, controlled movement. Keep a slight, soft bend in the elbows with wrists relaxed.\n" +
                 "Pause for one second once your arms are fully \"closed\" in front of your chest.\n" +
                 "Bring your arms slowly back to the starting position, opening your chest and keeping posture strong and upright.",
-        "Before you pick up a weight, stand with your arms at your sides and palms facing out. Your hands will be wider than shoulder width. That should be the strongest and most joint-friendly grip for you.\n" +
+        "Before you pick up a weight, stand with your arms at your sides and palms facing out.\nY" +
+                "our hands will be wider than shoulder width.\nThat should be the strongest and most joint-friendly grip for you.\n" +
                 "Now load a barbell, either on the floor or, if you’re training at home or in a mostly empty gym, the supports of a squat rack.",
-        "Sit on the preacher bench with your feet firmly planted on the floor shoulder-width apart. Grip the dumbbells, barbell or machine in a supinated (underhand) grip. Your underarms should be positioned at the top of the pad.\n" +
-                "Lower the dumbbells, barbell or machine in a controlled manner until both of your elbows are fully extended. Then curl upward, keeping your shoulders and body stable throughout."
+        "Sit on the preacher bench with your feet firmly planted on the floor shoulder-width apart.\n" +
+                "Grip the dumbbells, barbell or machine in a supinated (underhand) grip.\n" +
+                "Your underarms should be positioned at the top of the pad.\n" +
+                "Lower the dumbbells, barbell or machine in a controlled manner until both of your elbows are fully extended.\n" +
+                "Then curl upward, keeping your shoulders and body stable throughout."
 
     )
 

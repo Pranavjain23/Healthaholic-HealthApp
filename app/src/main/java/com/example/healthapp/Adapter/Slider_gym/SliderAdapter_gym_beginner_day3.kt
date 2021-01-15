@@ -33,25 +33,25 @@ class SliderAdapter_gym_beginner_day3(val context: Context) : PagerAdapter() {
         "3 sets",
         "3 sets",
         "3 sets" ,
-        " 3 sets " ,
-        " 3 sets" ,
-        "2 sets"
+        "3 sets " ,
+        "3 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
         "15 reps",
-        "6-10 reps" ,
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        "12 reps",
+        "10 reps" ,
+        "10 reps" ,
+        "15 reps" ,
+        "12 reps"
     )
     val slide_headings = arrayOf(
-        "EZ Bar Upright Rows – 3 sets of 15 reps",
-        "Close-Grip Pulldowns – 4 sets of 12 reps",
-        "Cable Fly – 4 sets of 10 reps",
-        "Lunges – 3 sets of 10 reps per leg",
-        "Skullcrushers – 3 sets of 15 reps",
-        "Hammer Curls – 3 sets of 12 reps"
+        "EZ Bar Upright Rows",
+        "Close-Grip Pulldowns",
+        "Cable Fly",
+        "Lunges",
+        "Skullcrushers",
+        "Hammer Curls"
     )
 
     val slide_descs = arrayOf(
@@ -70,13 +70,9 @@ class SliderAdapter_gym_beginner_day3(val context: Context) : PagerAdapter() {
                 "Pull your hands toward each other in wide arcs in front of you, pausing when your hands touch before slowly returning to the starting position. Alternate your forward foot with each set.",
 
         "1. Stand tall with feet hip-width apart. Engage your core.\n" +
-                "\n" +
                 "2. Take a big step forward with right leg. Start to shift your weight forward so heel hits the floor first.\n" +
-                "\n" +
                 "3. Lower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe. If mobility allows, lightly tap left knee to the floor while keeping weight in right heel.\n" +
-                "\n" +
                 "4. Press into right heel to drive back up to starting position.\n" +
-                "\n" +
                 "5. Repeat on the other side",
 
         "Lie down on your back. Your feet should be flat on the floor and your legs should be bent at the knees. If you're on a bench, your head should be at one end of the bench so you have space to use your weights. On a stability ball, just balance in the middle of your back",

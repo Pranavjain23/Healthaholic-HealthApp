@@ -37,7 +37,6 @@ class SliderAdapter_gym_advance_day4  (val context: Context) : PagerAdapter() {
     val slide_headings = arrayOf(
         "REST",
         "REST"
-
     )
 
     val slide_descs = arrayOf(

@@ -56,10 +56,10 @@ class SliderAdapter_gym_beginner_day1(val context: Context) : PagerAdapter() {
 
     val slide_descs = arrayOf(
         "Lie on the bench with your eyes under the bar\n" +
-                "  Grab the bar with a medium grip-width\n" +
-                "  Unrack the bar by straightening your arms\n" +
-                "  Lower the bar to your mid-chest\n" +
-                "  Press the bar back up until your arms are straight\n" +
+                "Grab the bar with a medium grip-width\n" +
+                "Unrack the bar by straightening your arms\n" +
+                "Lower the bar to your mid-chest\n" +
+                "Press the bar back up until your arms are straight\n" +
                 "Hold the weight for a second at the top, with straight arms.Breathe.\n" +
                 "Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
 

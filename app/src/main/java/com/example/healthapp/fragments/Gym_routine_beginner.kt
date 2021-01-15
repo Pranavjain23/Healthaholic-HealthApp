@@ -29,19 +29,14 @@ class Gym_routine_beginner : Fragment() {
         val listofDays = arrayListOf<gym_routine>()
 
         listofDays.add(
-            gym_routine("Day 1","Exercise","Chest , Back , Shoulders , Legs , Biceps , Triceps")
+            gym_routine("Day 1","Full Body","Workout")
         )
         listofDays.add(
-            gym_routine("Day 2","Exercise","Legs" +
-                    ", Triceps" +
-                    ", Biceps" +
-                    ", Chest" +
-                    ", Back" +
-                    ", Shoulder")
+            gym_routine("Day 2","Full Body","Workout")
         )
 
         listofDays.add(
-            gym_routine("Day 3","Exercise","Shoulders, Back, Chest, Legs, Triceps, Biceps")
+            gym_routine("Day 3","Full Body","Workout")
         )
 
 

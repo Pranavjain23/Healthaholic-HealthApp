@@ -32,26 +32,26 @@ class SliderAdapter_gym_beginner_day2(val context: Context) : PagerAdapter() {
         "3 sets",
         "3 sets",
         "3 sets" ,
-        " 3 sets " ,
-        " 3 sets" ,
-        "2 sets"
+        "3 sets " ,
+        "3 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
+        "8 reps",
         "15 reps",
-        "6-10 reps" ,
-        "5-8 reps" ,
-        "6-10 reps" ,
-        "10 reps"
+        "10 reps" ,
+        "10 reps" ,
+        "10 reps" ,
+        "15 reps"
     )
 
     val slide_headings = arrayOf(
-        "Leg Press Machine – 4 sets of 8 reps",
-        "Overhead Bar Extensions – 3 sets of 20 reps",
-        "EZ Bar Curls – 4 sets of 10 reps",
-        "Machine Chest Press – 4 sets of 10 reps",
-        "T-Bar Row – 4 sets of 10 reps",
-        "Lateral Raises – 3 sets of 20 reps"
+        "Leg Press Machine",
+        "Overhead Bar Extensions",
+        "EZ Bar Curls",
+        "Machine Chest Press",
+        "T-Bar Row",
+        "Lateral Raises"
     )
 
 

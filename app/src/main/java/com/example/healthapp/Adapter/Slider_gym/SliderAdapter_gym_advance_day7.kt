@@ -27,18 +27,18 @@ class SliderAdapter_gym_advance_day7(val context: Context) : PagerAdapter() {
         R.drawable.seated_calf_rasie,
         R.drawable.calves    )
     val slide_sets = arrayOf(
-        " 5 sets",
-        " 5 sets",
-        " 5 sets" ,
-        " 5 sets" ,
-        " 3 sets"
+        "5 sets",
+        "5 sets",
+        "5 sets" ,
+        "5 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
-        " 20-8 (Pyramiding) reps",
-        " 10 reps",
-        " 6-10 reps" ,
-        " 6-10 reps" ,
-        " 8-12 reps"
+        "20-8 (Pyramiding) reps",
+        "10 reps",
+        "6-10 reps" ,
+        "6-10 reps" ,
+        "8-12 reps"
     )
 
     val slide_headings = arrayOf(

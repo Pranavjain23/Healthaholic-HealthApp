@@ -27,27 +27,25 @@ class SliderAdapter_gym_intermediate_day1(val context: Context) : PagerAdapter()
     )
 
     val slide_headings = arrayOf(
-        "Incline Dumbbell Bench Press –3 sets of 10 reps",
-        "Skullcrushers – 3 sets of 8-10 Reps",
-        "Barbell Front Raise – 4 sets of 12 reps"
+        "Incline Dumbbell Bench Press",
+        "Skullcrushers",
+        "Barbell Front Raise"
     )
     val slide_sets = arrayOf(
-        "3 sets",
-
-        " 3 sets" ,
-        "2 sets"
+        "4 sets",
+        "4 sets" ,
+        "4 sets"
     )
     val slide_reps = arrayOf(
-        "12 reps",
-
-        "6-10 reps" ,
-        "10 reps"
+        "15 reps",
+        "15 reps" ,
+        "15 reps"
     )
 
     val slide_descs = arrayOf(
-        "Step 1 :: Set an adjustable bench to an incline of 30-45 degrees. Lie on your back on the bench and hold a pair of dumbbells directly above your shoulders with your arms fully extended.\n Step 2:: Pull your shoulder blades together, and slightly stick out your chest. Lower both dumbbells to the sides of your chest.",
-        "Lie down on your back. Your feet should be flat on the floor and your legs should be bent at the knees. If you're on a bench, your head should be at one end of the bench so you have space to use your weights. On a stability ball, just balance in the middle of your back",
-        "In this version of the dumbbell front raise, you start with a dumbbell in each hand at thigh level. You raise the dumbbells parallel to the floor and then return to the starting position to complete one exercise repetition. You can use this exercise in an upper body workout to build your shoulder strength.")
+        "Set an adjustable bench to an incline of 30-45 degrees. Lie on your back on the bench and hold a pair of dumbbells directly above your shoulders with your arms fully extended.\nPull your shoulder blades together, and slightly stick out your chest. Lower both dumbbells to the sides of your chest.",
+        "Lie down on your back.\nYour feet should be flat on the floor and your legs should be bent at the knees.\nIf you're on a bench, your head should be at one end of the bench so you have space to use your weights.\nOn a stability ball, just balance in the middle of your back",
+        "In this version of the dumbbell front raise, you start with a dumbbell in each hand at thigh level.\nYou raise the dumbbells parallel to the floor and then return to the starting position to complete one exercise repetition.\nYou can use this exercise in an upper body workout to build your shoulder strength.")
 
 
 
