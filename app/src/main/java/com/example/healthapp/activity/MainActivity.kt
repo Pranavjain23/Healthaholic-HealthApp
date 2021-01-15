@@ -2,6 +2,8 @@ package com.example.healthapp.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.FrameLayout
@@ -14,6 +16,7 @@ import com.example.healthapp.BuildConfig
 import com.example.healthapp.R
 import com.example.healthapp.fragments.*
 import com.google.android.material.navigation.NavigationView
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var frameLayout:FrameLayout
@@ -40,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             R.string.close_drawer
         )
         setUpToolbar()
+        menuInflater
 
 
         openHome()
@@ -163,6 +167,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
     fun openHome(){
         val fragment = HomeFragment()
         val transaction = supportFragmentManager.beginTransaction()
@@ -189,7 +194,7 @@ class MainActivity : AppCompatActivity() {
         val frag = supportFragmentManager.findFragmentById(R.id.frame)
 
         when(frag){
-            is GymFragment -> openHome() // if at any frame ie other than dashboard this will bring back to dasboard on pressing back key
+            is GymFragment -> openHome()
             is YogaFragment -> openHome()
             is AboutAppFragment -> openHome()
             is DimensionOfWellnessFragment -> openHome()
@@ -203,7 +208,7 @@ class MainActivity : AppCompatActivity() {
             is WeightGain -> openHome()
             is WeightLoss -> openHome()
 
-            else -> super.onBackPressed()     // Exit the app (default)
+            else -> super.onBackPressed()
         }
     }
 

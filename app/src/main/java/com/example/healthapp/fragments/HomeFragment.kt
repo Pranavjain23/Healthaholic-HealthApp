@@ -31,6 +31,8 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+        setHasOptionsMenu(true)
+
         dietPlan = view.findViewById(R.id.dietPlan)
         btnStepcounter = view.findViewById(R.id.btnStepCounter)
         btnBMI = view.findViewById(R.id.btnBMI)
@@ -97,9 +99,17 @@ class HomeFragment : Fragment() {
         inflater.inflate(R.menu.menu_information, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.info){
-            val intent = Intent(context, DevelopedByActivity::class.java)
-            startActivity(intent)
+        if(item.itemId == R.id.feedbackUser){
+//            val intent = Intent(context, FormFeedbackFragment::class.java)
+//            startActivity(intent)
+            val fragment = FormFeedbackFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
 
         return super.onOptionsItemSelected(item)
