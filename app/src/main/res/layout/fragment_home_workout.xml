@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@drawable/home_workout_session"
     tools:context=".fragments.HomeWorkoutFragment">
 
     <TextView
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="WELCOME"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp" />
 
@@ -25,7 +26,8 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="15dp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
         android:textAlignment="center"/>
 
     <TextView
@@ -39,9 +41,10 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:textStyle="bold"
         android:layout_marginBottom="10dp"
         android:textSize="12sp"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorWhite"/>
 
 
     <Button

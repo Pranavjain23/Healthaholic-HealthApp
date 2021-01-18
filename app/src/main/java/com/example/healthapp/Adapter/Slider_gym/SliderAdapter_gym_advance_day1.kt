@@ -60,10 +60,9 @@ class SliderAdapter_gym_advance_day1(val context: Context) : PagerAdapter() {
         "Lean forward. Put your elbows a little bit wider than your shoulders. Move knees slightly forward, so your body is shaped like a \"C\" Contract your abs to maintain the position. Keep your head in line with your spine as you go down.",
         "Grasp the bar with an overhand grip with your hands just wider than shoulder-width apart. Let your body hang straight down with your arms fully extended. Pull up and squeeze your lats until your chin is over the bar, before lowering slowly to the start position without swinging.",
         "Bend forwards, hinging at the hips, until your back is parallel to the ground. Your knees should be slightly bent. Grasp the bar using an overhand grip with your hands just wider than shoulder-width apart. Brace your core and lift the weight up to your abdomen by squeezing your shoulder blades together.",
-        "Grasp the bar with a wide grip with an overhand, knuckles up grip. Other positions and grips are possible but start with this standard position. Pull the bar down until it's approximately level with the chin. Exhale on down motion. While shifting just slightly backward is OK, aim to keep your upper torso stationary. Keep your feet flat on the floor and engage your abs as you pull. The bottom of the motion should be where your elbows can't move downward any more without moving backward. Be sure to stop at that point and do not go lower. Squeeze the shoulder blades together while maintaining square shoulders. From the bottom position with the bar close to your chin, slowly return the bar to the starting position while controlling its gradual ascent. Don't let it crash into the weight plates."
+        "Grasp the bar with a wide grip with an overhand, knuckles up grip. Other positions and grips are possible but start with this standard position. Pull the bar down until it's approximately level with the chin. Exhale on down motion. "
+
     )
-
-
 
     override fun getCount(): Int {
         return slide_headings.size
