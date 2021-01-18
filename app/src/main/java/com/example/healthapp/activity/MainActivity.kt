@@ -207,6 +207,8 @@ class MainActivity : AppCompatActivity() {
             is MealMenuFragment -> openHome()
             is WeightGain -> openHome()
             is WeightLoss -> openHome()
+            is DietPlan -> openHome()
+            is FormFeedbackFragment -> openHome()
 
             else -> super.onBackPressed()
         }

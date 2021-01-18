@@ -21,46 +21,39 @@ class SliderAdapter_gym_intermediate_day5(val context: Context) : PagerAdapter()
 
     val slide_images = arrayOf(
 
+        R.drawable.latpulldown,
         R.drawable.barbell_row,
-        R.drawable.barbell_shrugs,
-        R.drawable.pullups,
-        R.drawable.pulldown
+        R.drawable.standing_barbell_curl,
+        R.drawable.preacher_curl
     )
     val slide_sets = arrayOf(
         "4 sets",
         "4 sets " ,
-        "3 sets" ,
-        "3 sets"
+        "4 sets" ,
+        "4 sets"
     )
     val slide_reps = arrayOf(
         "15 reps",
         "15 reps" ,
-        "10 reps" ,
-        "10 reps"
+        "15 reps" ,
+        "15 reps"
     )
 
     val slide_headings = arrayOf(
+        "Lat Pull Down",
         "Barbell Rows" ,
-        "Barbell Shrugs" ,
-        "Pullups" ,
-        "Pulldowns"
-
+        "Standing Barbell Curl",
+        "Preacher Curl"
     )
 
     val slide_descs = arrayOf(
-        "Stand with your mid-foot under the bar (medium stance)\n" +
-                "Bend over and grab the bar (palms down, medium-grip)\n" +
-                "Unlock your knees while keeping your hips high\n" +
-                "Lift your chest and straighten your back\n" +
-                "Pull the bar against your lower chest\n" +
-                "\n" ,
-        "Step 1 Standing with your feet shoulder-width apart, place a barbell in front of your thighs, hands shoulder-width apart, palms facing your body, and arms fully extended.\n Step 2 Keeping your arms straight, shrug your shoulders as high as you can. Pause, then lower to the start position.",
-        "Grab The Bar. Grip it about shoulder-width apart.\n" +
-                "Hang. Raise your feet off the floor by bending your knees.\n" +
-                "Pull. Pull yourself up by pulling your elbows down to the floor.\n" +
-                "Pass The bar. Pull yourself all the way up until your chin passes the bar.\n" +
-                "Repeat. Lower yourself all the way down until your arms are straight.",
-        "Hold a short bar above your head with an overhand grip, palms facing forwards. Pull the bar down by bringing your elbows in to your sides. Then press the bar down, keeping your elbows by your sides. Reverse the movement to return to the starting position."
+        "Keep your chin back and chest up as you pull the bar down, squeezing your shoulder blades down and back. Pause at the bottom of the movement (when the bar is at chest height), and then raise the bar as high as you can go. That's the movement!",
+
+        "Stand with your mid-foot under the bar (medium stance). Bend over and grab the bar (palms down, medium-grip). Unlock your knees while keeping your hips high. Lift your chest and straighten your back. Pull the bar against your lower chest",
+
+        "Before you pick up a weight, stand with your arms at your sides and palms facing out. Our hands will be wider than shoulder width. That should be the strongest and most joint-friendly grip for you. Now load a barbell, either on the floor or, if you’re training at home or in a mostly empty gym, the supports of a squat rack.",
+
+        "Sit on the preacher bench with your feet firmly planted on the floor shoulder-width apart. Grip the dumbbells, barbell or machine in a supinated (underhand) grip. Your underarms should be positioned at the top of the pad. Lower the dumbbells, barbell or machine in a controlled manner until both of your elbows are fully extended. Then curl upward, keeping your shoulders and body stable throughout."
     )
 
     override fun getCount(): Int {

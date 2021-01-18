@@ -59,7 +59,7 @@ class Gym_Activity_intermediate_day4 : AppCompatActivity() {
     }
 
     fun addDotsIndicator(position: Int) {
-        mDots = arrayOfNulls(3)
+        mDots = arrayOfNulls(4)
         mDotLayout.removeAllViews()
         for (i in mDots.indices) {
             mDots[i] = TextView(this)

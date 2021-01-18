@@ -21,48 +21,39 @@ class SliderAdapter_gym_intermediate_day4(val context: Context) : PagerAdapter()
 
     val slide_images = arrayOf(
 
-        R.drawable.barbell_bench_press,
-        R.drawable.tricep_kickback,
+        R.drawable.barbell_front_raise,
+        R.drawable.machine_reverse,
+        R.drawable.barbell_shrugs,
         R.drawable.dumbell_lateral_rise
     )
     val slide_sets = arrayOf(
         "4 sets",
+        "4 sets" ,
         "4 sets" ,
         "4 sets"
     )
     val slide_reps = arrayOf(
         "15 reps",
         "15 reps" ,
+        "15 reps" ,
         "15 reps"
     )
 
     val slide_headings = arrayOf(
-        "Barbell Bench Press",
-        "Tricep Kickback",
+        "Barbell Front Raise",
+        "Machine Reverse Fly",
+        "Barbell Shrugs" ,
         "One Arm Cable Lateral Raise"
     )
 
     val slide_descs = arrayOf(
-        "Lie on the bench with your eyes under the bar\n" +
-                "Grab the bar with a medium grip-width (thumbs around the bar!)\n" +
-                "Unrack the bar by straightening your arms\n" +
-                "Lower the bar to your mid-chest\n" +
-                "Press the bar back up until your arms are straight\n" +
-                "Hold the weight for a second at the top, with straight arms. Breathe.\n" +
-                " Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
+        "Set an adjustable bench to an incline of 30-45 degrees. Lie on your back on the bench and hold a pair of dumbbells directly above your shoulders with your arms fully extended. Pull your shoulder blades together, and slightly stick out your chest. Lower both dumbbells to the sides of your chest.",
 
-        " Hold a dumbbell in each hand with your palms facing in toward each other, keeping your knees bent slightly.\n" +
-                "Engage your core and maintain a straight spine as you hinge forward at the waist, bringing your torso almost parallel to the floor.\n" +
-                "Keep your upper arms in close to your body and your head in line with your spine, tucking your chin in slightly.\n" +
-                "On an exhale, engage your triceps by straightening your elbows.\n" +
-                "Hold your upper arms still, only moving your forearms during this movement.\n" +
-                "Pause here, then inhale to return the weights to the starting position.",
+        "Sit up tall and relax your neck and shoulders. Your feet should be flat on the floor. Grab the handles so that your palms are facing forward. Note that some machines have a foot bar that you need to push in order to release the handles and bring them forward. Press your arms together in front of your chest with a slow, controlled movement. Keep a slight, soft bend in the elbows with wrists relaxed. Pause for one second once your arms are fully \"closed\" in front of your chest. Bring your arms slowly back to the starting position, opening your chest and keeping posture strong and upright.",
 
-    "Hold one dumbbell by your side and one in front. Lift to the side and front simultaneously. Lower back down under control.\n" +
-            "\n" +
-            "Alternate sides with each rep.")
+        "Standing with your feet shoulder-width apart, place a barbell in front of your thighs, hands shoulder-width apart, palms facing your body, and arms fully extended. Keeping your arms straight, shrug your shoulders as high as you can. Pause, then lower to the start position.",
 
-
+        "Hold one dumbbell by your side and one in front. Lift to the side and front simultaneously. Lower back down under control. Alternate sides with each rep.")
 
 
     override fun getCount(): Int {

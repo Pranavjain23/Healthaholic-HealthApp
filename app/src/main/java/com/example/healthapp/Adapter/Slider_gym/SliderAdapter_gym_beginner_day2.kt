@@ -56,35 +56,17 @@ class SliderAdapter_gym_beginner_day2(val context: Context) : PagerAdapter() {
 
 
         val slide_descs = arrayOf(
-            "Choose the appropriate weight and set the seat so that the knees are bent just over right angles.\n" +
-                    "Position feet about shoulder width apart\n" +
-                    "Try to push through your heels, keeping the knees lined up over the toes\n" +
-                    "Extend the legs until nearly straight, avoiding locking the knees\n" +
-                    "Lower the weight slowly back towards the starting position\n" +
-                    "Repeat for the number of reps required",
+            "Choose the appropriate weight and set the seat so that the knees are bent just over right angles. Position feet about shoulder width apart. Try to push through your heels, keeping the knees lined up over the toes. Extend the legs until nearly straight, avoiding locking the knees. Lower the weight slowly back towards the starting position. Repeat for the number of reps required",
 
-            "Step 1: Grab an EZ-bar with an overhand grip at the first grip position from the center. Raise bar above your head so your arms are straight out above your head. This is the starting position.\n" +
-                    "Step 2: Stand with feet shoulder-width apart. Next, begin exercise by lowering bar down behind head without moving upper arms. Only your forearms should be lowering down at the elbow. Lower down until forearms are parallel to the floor.\n" +
-                    "Step 3: Next, raise weight back up to starting position. Keep elbows tucked in. Do not let them flare out. This completes on rep.",
+            "Grab an EZ-bar with an overhand grip at the first grip position from the center. Raise bar above your head so your arms are straight out above your head. This is the starting position. Stand with feet shoulder-width apart. Next, begin exercise by lowering bar down behind head without moving upper arms. Only your forearms should be lowering down at the elbow. Lower down until forearms are parallel to the floor. Next, raise weight back up to starting position. Keep elbows tucked in. Do not let them flare out. This completes on rep.",
 
             "An EZ-bar curl is, well, easy. Stand with your feet shoulder-width apart, knees slightly bent. Hold an EZ-bar in an underhand grip with your arms extended and then curl the bar up towards your chest, keeping your elbows in to your sides. ",
 
-            "Step 1: Sit down on the chest press machine. Select the weight you want to work with.\n" +
-                    "Step 2: Step on the lever to bring the handles forward. Grab the handles and fully extend your arms.\n" +
-                    "Step 3: Grasp the handles in a palms-down grip. Lift your elbows so that your upper arms are parallel to the floor to the side of your torso. Push the handles forward and extend your arms; this is the starting position.\n" +
-                    "Step 4: Move the handles back towards you as you inhale.\n" +
-                    "Step 5: Push the handles away from you as you flex your pecs. Hold the contraction for a second and move back to the starting position.\n" +
-                    "Step 6: Repeat for the number of reps in your set.\n" +
-                    "Step 7: When you have finished, step on the lever again and move the handles back to their original position.",
+            "Sit down on the chest press machine. Select the weight you want to work with. Step on the lever to bring the handles forward. Grab the handles and fully extend your arms. Grasp the handles in a palms-down grip. Lift your elbows so that your upper arms are parallel to the floor to the side of your torso. Push the handles forward and extend your arms; this is the starting position. Move the handles back towards you as you inhale. Push the handles away from you as you flex your pecs. Hold the contraction for a second and move back to the starting position. Repeat for the number of reps in your set. When you have finished, step on the lever again and move the handles back to their original position.",
 
-            "Place the end of an empty barbell into the corner of a room.\n" +
-                    "Rest a heavy dumbbell or some weight plates on it to hold it down.\n" +
-                    "Load the opposite end of the bar with plates and straddle it.\n" +
-                    "Bend over at the hips until your torso is about a 45-degree angle to the floor with arms extended.\n" +
-                    "Hook a V-grip handle (the kind you see at a cable station) under the bar and hold with both hands.\n" +
-                    "Keeping your lower back in its natural arch, squeeze your shoulder blades together and pull the bar until the plates touch your chest.\n" ,
+            "Place the end of an empty barbell into the corner of a room. Rest a heavy dumbbell or some weight plates on it to hold it down. Load the opposite end of the bar with plates and straddle it. Bend over at the hips until your torso is about a 45-degree angle to the floor with arms extended. Hook a V-grip handle (the kind you see at a cable station) under the bar and hold with both hands. Keeping your lower back in its natural arch, squeeze your shoulder blades together and pull the bar until the plates touch your chest." ,
 
-            "All you need is a set of dumbbells (start with a pair between 5 to 15 pounds if you're a beginner), and enough space to raise your arms in a \"T\" formation out to each side."
+            "All you need is a set of dumbbells (start with a pair between 5 to 15 pounds for the beginner), and enough space to raise your arms in a \"T\" formation out to each side."
 
             )
 

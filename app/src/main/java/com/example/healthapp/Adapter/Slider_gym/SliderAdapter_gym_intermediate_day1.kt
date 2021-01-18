@@ -22,30 +22,42 @@ class SliderAdapter_gym_intermediate_day1(val context: Context) : PagerAdapter()
     val slide_images = arrayOf(
 
         R.drawable.incline_bench_press,
-        R.drawable.skull_cusher,
-        R.drawable.barbell_front_raise
+        R.drawable.barbell_bench_press,
+        R.drawable.latpulldown,
+        R.drawable.pullups,
+        R.drawable.pulldown
     )
 
     val slide_headings = arrayOf(
+
         "Incline Dumbbell Bench Press",
-        "Skullcrushers",
-        "Barbell Front Raise"
+        "Barbell Bench Press",
+        "Lat Pull Down",
+        "Pullups" ,
+        "Pulldowns"
     )
     val slide_sets = arrayOf(
         "4 sets",
         "4 sets" ,
-        "4 sets"
+        "4 sets",
+        "3 sets" ,
+        "3 sets"
     )
     val slide_reps = arrayOf(
         "15 reps",
         "15 reps" ,
-        "15 reps"
+        "15 reps",
+        "10 reps" ,
+        "10 reps"
     )
 
     val slide_descs = arrayOf(
-        "Set an adjustable bench to an incline of 30-45 degrees. Lie on your back on the bench and hold a pair of dumbbells directly above your shoulders with your arms fully extended.\nPull your shoulder blades together, and slightly stick out your chest. Lower both dumbbells to the sides of your chest.",
-        "Lie down on your back.\nYour feet should be flat on the floor and your legs should be bent at the knees.\nIf you're on a bench, your head should be at one end of the bench so you have space to use your weights.\nOn a stability ball, just balance in the middle of your back",
-        "In this version of the dumbbell front raise, you start with a dumbbell in each hand at thigh level.\nYou raise the dumbbells parallel to the floor and then return to the starting position to complete one exercise repetition.\nYou can use this exercise in an upper body workout to build your shoulder strength.")
+        "Set an adjustable bench to an incline of 30-45 degrees. Lie on your back on the bench and hold a pair of dumbbells directly above your shoulders with your arms fully extended. Pull your shoulder blades together, and slightly stick out your chest. Lower both dumbbells to the sides of your chest.",
+        "Lie on the bench with your eyes under the bar. Grab the bar with a medium grip-width (thumbs around the bar!). Unrack the bar by straightening your arms. Lower the bar to your mid-chest. Press the bar back up until your arms are straight. Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
+        "Keep your chin back and chest up as you pull the bar down, squeezing your shoulder blades down and back. Pause at the bottom of the movement (when the bar is at chest height), and then raise the bar as high as you can go. That's the movement!",
+        "Grab The Bar. Grip it about shoulder-width apart. Hang. Raise your feet off the floor by bending your knees. Pull. Pull yourself up by pulling your elbows down to the floor. Pass The bar. Pull yourself all the way up until your chin passes the bar. Repeat. Lower yourself all the way down until your arms are straight.",
+        "Hold a short bar above your head with an overhand grip, palms facing forwards. Pull the bar down by bringing your elbows in to your sides. Then press the bar down, keeping your elbows by your sides. Reverse the movement to return to the starting position."
+    )
 
 
 

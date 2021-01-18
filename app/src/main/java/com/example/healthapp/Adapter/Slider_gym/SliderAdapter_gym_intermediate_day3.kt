@@ -48,19 +48,13 @@ class SliderAdapter_gym_intermediate_day3(val context: Context) : PagerAdapter()
     )
 
     val slide_descs = arrayOf(
-        "Begin with the barbell across the front side of your shoulders.\n" +
-                "Place your fingertips under the barbell just outside of your shoulders and drive your elbows up.\n" +
-                "Keeping your chest up and core tight, bend at your hips and knees to lower into a squat until your thighs are parallel to the ground",
-        "Place your hands on the hand bars.\n" +
-                "Lift the weight while exhaling until your legs are almost straight.\n" +
-                "Do not lock your knees. Keep your back against the backrest and do not arch your back.\n" +
-                "Exhale and lower the weight back to starting position.\n",
-        "Lie on your back. Put your calves and heels on a stability ball.\n" +
-                "Move your hips upward until your body is straight. Engage your glutes.\n" +
-                "Slowly lift your hips and bend your knees.\n" +
-                "Extend your knees and lower your hips and back to the floor.\n",
-        "Stand up straight, then push through the balls of your feet and raise your heel until you are standing on your toes.\n" +
-                "Then lower slowly back to the start."
+        "Begin with the barbell across the front side of your shoulders. Place your fingertips under the barbell just outside of your shoulders and drive your elbows up. Keeping your chest up and core tight, bend at your hips and knees to lower into a squat until your thighs are parallel to the ground",
+
+        "Place your hands on the hand bars. Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back. Exhale and lower the weight back to starting position.",
+
+        "Lie on your back. Put your calves and heels on a stability ball. Move your hips upward until your body is straight. Engage your glutes. Slowly lift your hips and bend your knees. Extend your knees and lower your hips and back to the floor.\n",
+
+        "Stand up straight, then push through the balls of your feet and raise your heel until you are standing on your toes. Then lower slowly back to the start."
 
     )
 

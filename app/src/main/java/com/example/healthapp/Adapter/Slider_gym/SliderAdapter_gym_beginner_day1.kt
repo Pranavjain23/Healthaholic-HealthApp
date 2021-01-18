@@ -55,36 +55,17 @@ class SliderAdapter_gym_beginner_day1(val context: Context) : PagerAdapter() {
     )
 
     val slide_descs = arrayOf(
-        "Lie on the bench with your eyes under the bar\n" +
-                "Grab the bar with a medium grip-width\n" +
-                "Unrack the bar by straightening your arms\n" +
-                "Lower the bar to your mid-chest\n" +
-                "Press the bar back up until your arms are straight\n" +
-                "Hold the weight for a second at the top, with straight arms.Breathe.\n" +
-                "Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
+        "Lie on the bench with your eyes under the bar. Grab the bar with a medium grip-width. Unrack the bar by straightening your arms. Lower the bar to your mid-chest. Press the bar back up until your arms are straight. Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.",
 
-        "Grasp the bar with a wide grip with an overhand, knuckles up grip.\n" +
-                "Pull the bar down until it's approximately level with the chin. Exhale on down motion. While shifting just slightly backward is OK, aim to keep your upper torso stationary. Keep your feet flat on the floor and engage your abs as you pull. The bottom of the motion should be where your elbows can't move downward any more without moving backward. Be sure to stop at that point and do not go lower.\n" +
-                "Squeeze the shoulder blades together while maintaining square shoulders.\n" +
-                "From the bottom position with the bar close to your chin, slowly return the bar to the starting position while controlling its gradual ascent.\n",
+        "Grasp the bar with a wide grip with an overhand, knuckles up grip. Pull the bar down until it's approximately level with the chin. Exhale on down motion. While shifting just slightly backward is OK, aim to keep your upper torso stationary. Keep your feet flat on the floor and engage your abs as you pull. The bottom of the motion should be where your elbows can't move downward any more without moving backward. Be sure to stop at that point and do not go lower. Squeeze the shoulder blades together while maintaining square shoulders. From the bottom position with the bar close to your chin, slowly return the bar to the starting position while controlling its gradual ascent.",
 
-        "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.\n" +
-                "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.\n" +
-                "Once the dumbbells are in place, rotate your palms so they are facing forward.\n" +
-                "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.\n" +
-                "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).\n",
+        "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack. Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench. Once the dumbbells are in place, rotate your palms so they are facing forward. Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids. Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
 
-        "Place your hands on the hand bars.\n" +
-                "Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back.\n" +
-                "Exhale and lower the weight back to starting position.\n",
+        "Place your hands on the hand bars. Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back. Exhale and lower the weight back to starting position.",
 
-        "Stand tall with your chest up and core braced, holding the barbell with your hands just outside of your hips, using an underhand grip. Keeping your chest up and your elbows tight to your sides, initiate the move by raising your hands slightly so you feel your biceps become engaged. While maintaining tension on your biceps, curl the bar up to shoulder height, then give your biceps a one-second squeeze. Start to lower the bar slowly, keeping your biceps tensed and engaged to work as many muscle fibres as possible.\n" +
-                "Once the bar is back in the start position, straighten your arms fully to tense your triceps to ensure that your biceps are worked through the fullest possible range of motion.",
+        "Stand tall with your chest up and core braced, holding the barbell with your hands just outside of your hips, using an underhand grip. Keeping your chest up and your elbows tight to your sides, initiate the move by raising your hands slightly so you feel your biceps become engaged. While maintaining tension on your biceps, curl the bar up to shoulder height, then give your biceps a one-second squeeze. Start to lower the bar slowly, keeping your biceps tensed and engaged to work as many muscle fibres as possible. Once the bar is back in the start position, straighten your arms fully to tense your triceps to ensure that your biceps are worked through the fullest possible range of motion.",
 
-        "Start by bracing your abdominals.\n" +
-                "Tuck your elbows in at your sides and position your feet slightly apart.\n" +
-                "Inhale. Push down until your elbows are fully extended but not yet in the straight, locked position. Keep your elbows close to your body and bend your knees slightly on the pushdown. Resist bending forward. Try to keep your back as straight as possible as you push down.As you exhale, return to the starting point using a controlled movement. Try not to crash the weights.\n" +
-                "For beginners, aim to complete 3 sets of 15 reps."
+        "Start by bracing your abdominals. Tuck your elbows in at your sides and position your feet slightly apart. Inhale. Push down until your elbows are fully extended but not yet in the straight, locked position. Keep your elbows close to your body and bend your knees slightly on the pushdown. Resist bending forward. Try to keep your back as straight as possible as you push down.As you exhale, return to the starting point using a controlled movement. Try not to crash the weights."
         )
 
 

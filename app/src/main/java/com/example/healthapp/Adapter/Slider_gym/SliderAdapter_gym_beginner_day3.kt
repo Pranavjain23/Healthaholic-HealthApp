@@ -55,25 +55,13 @@ class SliderAdapter_gym_beginner_day3(val context: Context) : PagerAdapter() {
     )
 
     val slide_descs = arrayOf(
-        "Step 1: Grasp an EZ-bar with an overhand grip. Hands should be place on the first grip position so that they are only a few inches apart.\n" +
-                "Step 2: While keeping the bar close to your body, raise the bar straight up until it almost touches your chin and your elbows are flared out to the sides.\n" +
-                "Step 3: Slowly lower the weight back down the starting position.\n" +
-                "Step 4: This completes one rep.",
+        "Grasp an EZ-bar with an overhand grip. Hands should be place on the first grip position so that they are only a few inches apart. While keeping the bar close to your body, raise the bar straight up until it almost touches your chin and your elbows are flared out to the sides. Slowly lower the weight back down the starting position. This completes one rep.",
 
-        "Sit at a lat pull-down machine and attach a hammer grip to the cable.\n" +
-                "Hold the grip with your palms facing in, straighten your torso and lock it in this position. Then lean back slightly.\n" +
-                "Keep your elbows tucked in to your sides and pull the handle to your chest, making sure your arms are the only part of you that moves.",
+        "Sit at a lat pull-down machine and attach a hammer grip to the cable. Hold the grip with your palms facing in, straighten your torso and lock it in this position. Then lean back slightly. Keep your elbows tucked in to your sides and pull the handle to your chest, making sure your arms are the only part of you that moves.",
 
-        "Set the pulleys on a dual-cable machine to chest height, and stand between the two stacks. Grab the handles.\n" +
-                "Keeping your back straight and core engaged, raise your arms out to your sides, palms facing forward, and walk a step or two forward in order to create tension on the cables. Stand with one foot in front of the other.\n" +
-                "Bend your elbows slightly, making sure not to let them travel behind your shoulders. This is your starting position.\n" +
-                "Pull your hands toward each other in wide arcs in front of you, pausing when your hands touch before slowly returning to the starting position. Alternate your forward foot with each set.",
+        "Set the pulleys on a dual-cable machine to chest height, and stand between the two stacks. Grab the handles. Keeping your back straight and core engaged, raise your arms out to your sides, palms facing forward, and walk a step or two forward in order to create tension on the cables. Stand with one foot in front of the other. Bend your elbows slightly, making sure not to let them travel behind your shoulders. This is your starting position. Pull your hands toward each other in wide arcs in front of you, pausing when your hands touch before slowly returning to the starting position. Alternate your forward foot with each set.",
 
-        "1. Stand tall with feet hip-width apart. Engage your core.\n" +
-                "2. Take a big step forward with right leg. Start to shift your weight forward so heel hits the floor first.\n" +
-                "3. Lower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe. If mobility allows, lightly tap left knee to the floor while keeping weight in right heel.\n" +
-                "4. Press into right heel to drive back up to starting position.\n" +
-                "5. Repeat on the other side",
+        "Stand tall with feet hip-width apart. Engage your core. Take a big step forward with right leg. Start to shift your weight forward so heel hits the floor first. Lower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe. If mobility allows, lightly tap left knee to the floor while keeping weight in right heel. Press into right heel to drive back up to starting position. Repeat on the other side",
 
         "Lie down on your back. Your feet should be flat on the floor and your legs should be bent at the knees. If you're on a bench, your head should be at one end of the bench so you have space to use your weights. On a stability ball, just balance in the middle of your back",
 
