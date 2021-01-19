@@ -5,13 +5,11 @@ import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
+import android.widget.ImageView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.healthapp.R
-import com.example.healthapp.activity.BmiActivity
-import com.example.healthapp.activity.DevelopedByActivity
-import com.example.healthapp.activity.MainActivity
-import com.example.healthapp.activity.StepCounterActivity
+import com.example.healthapp.activity.*
 
 
 class HomeFragment : Fragment() {
@@ -19,7 +17,11 @@ class HomeFragment : Fragment() {
     lateinit var btnStepcounter : CardView
     lateinit var btnBMI : CardView
     lateinit var dietPlan : Button
-
+    lateinit var img1:ImageView
+    lateinit var img2:ImageView
+    lateinit var img3:ImageView
+    lateinit var img4:ImageView
+    lateinit var img5:ImageView
     lateinit var breakfastCard : CardView
     lateinit var lunchCard : CardView
     lateinit var dinnerCard : CardView
@@ -39,6 +41,33 @@ class HomeFragment : Fragment() {
         breakfastCard=view.findViewById(R.id.breakfastCard)
         lunchCard=view.findViewById(R.id.lunchCard)
         dinnerCard=view.findViewById(R.id.dinnerCard)
+        img1=view.findViewById(R.id.img1)
+        img2=view.findViewById(R.id.img2)
+        img3=view.findViewById(R.id.img3)
+        img4=view.findViewById(R.id.img4)
+        img5=view.findViewById(R.id.img5)
+
+
+        img1.setOnClickListener {
+            val intent = Intent(context, PhysicalActivity::class.java)
+            startActivity(intent)
+        }
+        img2.setOnClickListener {
+            val intent = Intent(context, SocialActivity::class.java)
+            startActivity(intent)
+        }
+        img3.setOnClickListener {
+            val intent = Intent(context, SpiritualActivity::class.java)
+            startActivity(intent)
+        }
+        img4.setOnClickListener {
+            val intent = Intent(context, EmotionalActivity::class.java)
+            startActivity(intent)
+        }
+        img5.setOnClickListener {
+            val intent = Intent(context, IntellectualActivity::class.java)
+            startActivity(intent)
+        }
 
         btnStepcounter.setOnClickListener {
             val intent = Intent(context, StepCounterActivity::class.java)

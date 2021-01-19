@@ -24,30 +24,38 @@
         android:orientation="horizontal">
 
             <ImageView
-        android:layout_width="0dp"
+                android:id="@+id/img1"
+                android:layout_width="0dp"
         android:layout_height="50dp"
         android:src="@drawable/physicalcircle"
         android:layout_weight="1"/>
 
         <ImageView
+            android:id="@+id/img2"
+
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/socialcircle"
             android:layout_weight="1"/>
 
         <ImageView
+            android:id="@+id/img3"
+
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/spiritualcircle"
             android:layout_weight="1"/>
 
         <ImageView
+            android:id="@+id/img4"
+
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/emotionalcircle"
             android:layout_weight="1"/>
 
         <ImageView
+            android:id="@+id/img5"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/intellectualcircle"

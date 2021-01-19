@@ -21,28 +21,22 @@ class SliderAdapter_gym_advance_day4  (val context: Context) : PagerAdapter() {
 
     val slide_images = arrayOf(
 
-        R.drawable.rest,
-        R.drawable.rest_2
+        R.drawable.rest, R.drawable.rest
 
     )
     val slide_sets = arrayOf(
-        "0 sets",
-        "0 sets"
+        "",""
     )
     val slide_reps = arrayOf(
-        "12 reps",
-        "10 reps"
+        "",""
     )
 
     val slide_headings = arrayOf(
-        "REST",
-        "REST"
+        "",""
     )
-
     val slide_descs = arrayOf(
-        "It’s your rest day. Rest your muscle to prepare for the next round of training",
-    "    It’s your rest day. Rest your muscle to prepare for the next round of training")
-
+        "It’s your rest day. Rest your muscle to prepare for the next round of training",""
+    )
 
     override fun getCount(): Int {
         return slide_headings.size
