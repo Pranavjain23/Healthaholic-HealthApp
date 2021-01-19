@@ -1,13 +1,16 @@
 package com.example.healthapp.fragments
 
+import android.app.Activity
+import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
+import android.widget.*
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import com.example.healthapp.R
 import com.example.healthapp.model.DataFirebase
@@ -26,6 +29,7 @@ class FormFeedbackFragment : Fragment() {
     lateinit var radio3:RadioButton
     lateinit var submit:Button
     lateinit  var ref: DatabaseReference
+    var selectedOption: Int =0
     var maxid = 0
     private lateinit var member: DataFirebase
     override fun onCreateView(
@@ -45,7 +49,7 @@ class FormFeedbackFragment : Fragment() {
         radio2=view.findViewById(R.id.userFemale)
         radio3=view.findViewById(R.id.userOthers)
          submit=view.findViewById(R.id.btnUserSubmit)
-
+        radio1.isChecked = true
         member=DataFirebase()
         ref = FirebaseDatabase.getInstance().reference.child("User")
         ref.addValueEventListener(object : ValueEventListener {
@@ -59,13 +63,16 @@ class FormFeedbackFragment : Fragment() {
             override fun onCancelled(error: DatabaseError) {}
         })
         submit.setOnClickListener(View.OnClickListener {
+           if(userPhone.text.toString().length!=10){
+                Toast.makeText(context,"Incorrect mobile number",Toast.LENGTH_SHORT).show()
+            }
+            else if(checkIsEmpty(userName.text.toString(),userMail.text.toString(),userPhone.text.toString(),userAge.text.toString(),userQuery.text.toString() )){
             member.setName(userName.text.toString())
             member.setEmail(userMail.text.toString())
             member.setPhone(userPhone.text.toString())
             member.setAge(userAge.text.toString() )
             member.setQuery(userQuery.text.toString() )
-            val selectedOption: Int = rg.checkedRadioButtonId
-            val rb: RadioButton = view.findViewById<RadioButton>(selectedOption)
+            val rb: RadioButton = view.findViewById(selectedOption)
             if(rb.text.equals("Male")){
                 member.setGender("Male")
             }else if(rb.text.equals("Female")){
@@ -75,10 +82,32 @@ class FormFeedbackFragment : Fragment() {
             }
 
             ref.child((maxid + 1).toString()).setValue(member)
+            val dialog = AlertDialog.Builder(activity as Context)
+            dialog.setTitle("Thankyou!")
+            dialog.setMessage("Your feedback is valuable to us. Our team will reach you out at "+userMail.text.toString())
+            dialog.setPositiveButton("OKAY"){ text,listener ->
+                       activity?.finish()
+            }
+
+            dialog.setNegativeButton(""){ text, listener ->
+            }
+            dialog.create()
+            dialog.show()
+
+            }else{
+                Toast.makeText(context,"Information incomplete!!",Toast.LENGTH_LONG).show()
+            }
         })
 
-
         return view
+    }
+
+    fun checkIsEmpty(name:String,mail:String,phone:String,age:String,query:String):Boolean{
+            if(name == "" ||phone.equals("")||age.equals("")||mail.equals("")||query.equals("")){
+                return false
+            }
+        return true
+
     }
 
 }
