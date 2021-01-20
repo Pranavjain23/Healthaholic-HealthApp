@@ -20,6 +20,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
             android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
             android:text="App Creator Team"
             android:textStyle="bold" />
 
@@ -95,15 +96,15 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/txtContactNumber"
+                    android:id="@+id/feedback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtMyId"
                     android:drawablePadding="5dp"
                     android:drawableLeft="@drawable/ic_linkedin"
                     android:padding="8dp"
-                    android:text="bhoomikagarg"
-                    android:textColor="#357a38"
+                    android:text="@string/feedback"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 

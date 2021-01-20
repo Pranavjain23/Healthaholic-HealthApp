@@ -28,7 +28,9 @@
         Step counter : Keeping track of your physical activity can be hard without a Fitbit, Apple Watch, or other workout tracking device — especially for people who walk as their main form of exercise. The easiest solution is to use this step counter
     </string>
 
-
+<string name="feedback">
+    <a href="https://drive.google.com/drive/u/0/folders/1yYcEZ5oXt6t35gvQCHx6gNNR4tANtHkg">bhoomikaGarg</a>
+</string>
     <string-array name="PhysicalEntries">
         <item>Engage in physical activity everyday for 30 minutes. You may break up your daily 30 minutes into 10 minutes bouts.</item>
         <item>Use stairs instead of the elevator or escalator and walk whenever possible.</item>

@@ -1,6 +1,7 @@
 package com.example.healthapp.fragments
 
 import android.os.Bundle
+import android.text.Html
 import android.text.method.LinkMovementMethod
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,15 +17,16 @@ class AppCreatorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_app_creator, container, false)
-       // getActionBar()?.setTitle("App Creator Team");
 
-
-        val link = view.findViewById<TextView>(R.id.txtContactNumber)
+        val link = view.findViewById<TextView>(R.id.txtMyId)
+        link.text = Html.fromHtml("<a href=\"mailto:bhoomika.garg.9@gmail.com\">bhoomika.garg.9@gmail.com</a>")
         link.movementMethod = LinkMovementMethod.getInstance()
-        val link10 = view.findViewById<TextView>(R.id.txtContactNumber1)
-        link10.movementMethod = LinkMovementMethod.getInstance()
+
+        val feedback = view.findViewById<TextView>(R.id.feedback)
+        feedback.movementMethod = LinkMovementMethod.getInstance()
+
+
 
         return view
     }
