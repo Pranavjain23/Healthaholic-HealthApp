@@ -8,10 +8,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HOME WORKOUT NAME"
+        android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textSize="27sp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="65dp"
         android:layout_marginRight="20dp"
         android:textColor="@color/black"/>
 
@@ -22,6 +23,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/yogapose"
+        android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"/>
 
     <ScrollView

@@ -63,10 +63,10 @@ class FormFeedbackFragment : Fragment() {
             override fun onCancelled(error: DatabaseError) {}
         })
         submit.setOnClickListener(View.OnClickListener {
-           if(userPhone.text.toString().length!=10){
-                Toast.makeText(context,"Incorrect mobile number",Toast.LENGTH_SHORT).show()
-            }
-            else if(checkIsEmpty(userName.text.toString(),userMail.text.toString(),userPhone.text.toString(),userAge.text.toString(),userQuery.text.toString() )){
+//           if(userPhone.text.toString().length!=10){
+//                Toast.makeText(context,"Incorrect mobile number",Toast.LENGTH_SHORT).show()
+//            }
+             if(checkIsEmpty(userName.text.toString(),userMail.text.toString(),userPhone.text.toString(),userAge.text.toString(),userQuery.text.toString() )){
             member.setName(userName.text.toString())
             member.setEmail(userMail.text.toString())
             member.setPhone(userPhone.text.toString())

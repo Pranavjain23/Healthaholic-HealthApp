@@ -69,7 +69,6 @@ class BmiActivity : AppCompatActivity() {
             "You are $msg", Snackbar.LENGTH_INDEFINITE)
         snack.setAction("Ok") {
             finish()
-            // TODO when you tap on "Click Me"
         }
         snack.show()
     }

@@ -29,26 +29,26 @@ class Gym_routine_advance : Fragment() {
         val listofDays = arrayListOf<gym_routine>()
 
         listofDays.add(
-            gym_routine("Day 1","Exercise","Chest + Back")
+            gym_routine("Day 1","Upper Body","Chest + Back")
         )
         listofDays.add(
-            gym_routine("Day 2","Exercise","Legs")
+            gym_routine("Day 2","Lower body","Legs")
         )
 
         listofDays.add(
-            gym_routine("Day 3","Exercise","Shoulders + Arms")
+            gym_routine("Day 3","Workout","Shoulders + Arms")
         )
         listofDays.add(
-            gym_routine("Day 4","Rest Day","")
+            gym_routine("Day 4","Rest Day","Take your rest")
         )
         listofDays.add(
-            gym_routine("Day 5","Exercise","Chest + Shoulders + Triceps")
+            gym_routine("Day 5","Muscles","Chest + Shoulders + Triceps")
         )
         listofDays.add(
-            gym_routine("Day 6","Exercise","Back + Biceps")
+            gym_routine("Day 6","Upper Body","Back + Biceps")
         )
         listofDays.add(
-            gym_routine("Day 7","Exercise","Legs")
+            gym_routine("Day 7","Lower Body","Legs")
         )
 
         recyclerAdapter = gym_advance_adapter(activity as Context,listofDays)

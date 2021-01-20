@@ -151,7 +151,7 @@ class MainActivity : AppCompatActivity() {
     private fun setUpToolbar(){
         setSupportActionBar(toolbar)
      //   supportActionBar?.title = "Toolbar title"
-        getSupportActionBar()?.setDisplayShowTitleEnabled(false);
+        supportActionBar?.setDisplayShowTitleEnabled(true);
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }

@@ -29,20 +29,20 @@ class Gym_routine_intermediate : Fragment() {
         val listofDays = arrayListOf<gym_routine>()
 
         listofDays.add(
-            gym_routine("Day 1","Exercise","Chest + Back")
+            gym_routine("Day 1","Upper Body","Chest + Back")
         )
         listofDays.add(
-            gym_routine("Day 2","Exercise","Biceps + Triceps")
+            gym_routine("Day 2","Muscles","Biceps + Triceps")
         )
 
         listofDays.add(
-            gym_routine("Day 3","Exercise","Legs")
+            gym_routine("Day 3","Lower Body","Legs")
         )
         listofDays.add(
-            gym_routine("Day 4","Exercise","Shoulders")
+            gym_routine("Day 4","Workout","Shoulders")
         )
         listofDays.add(
-            gym_routine("Day 5","Exercise","Back + Biceps")
+            gym_routine("Day 5","Upper Body","Back + Biceps")
         )
 
         recyclerAdapter = gym_intermediate_adapter(activity as Context,listofDays)

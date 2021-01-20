@@ -6,6 +6,7 @@
     android:background="@color/colorWhite">
 
 <RelativeLayout
+    android:id="@+id/gym"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView

@@ -35,9 +35,9 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="wrap_content"
                         android:text="Dimensions of Wellness"
-                        android:textSize="20sp"
+                        android:textSize="22sp"
                         android:paddingStart="10dp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
