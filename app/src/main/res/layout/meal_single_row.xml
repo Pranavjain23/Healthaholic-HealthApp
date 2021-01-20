@@ -42,6 +42,7 @@
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="2dp"
+                android:textColor="@color/black"
                 android:text="Dish name comes here"/>
 
             <TextView
@@ -49,8 +50,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
-                android:layout_marginBottom="2dp"
-                android:drawableLeft="@drawable/ic_time"
+                android:layout_marginBottom="3dp"
+                android:drawableStart="@drawable/ic_time"
                 android:drawablePadding="6dp"
                 android:text="50 mins"/>
 
@@ -60,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:layout_marginBottom="2dp"
-                android:drawableLeft="@drawable/ic_cook"
+                android:drawableStart="@drawable/ic_cook"
                 android:drawablePadding="6dp"
                 android:text="Easy"/>
 
@@ -68,7 +69,7 @@
                 android:id="@+id/dishVeg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_veg_nonveg"
+                android:drawableStart="@drawable/ic_veg_nonveg"
                 android:drawablePadding="6dp"
                 android:textSize="14sp"
                 android:text="Vegetarian"/>

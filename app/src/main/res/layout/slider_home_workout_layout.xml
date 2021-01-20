@@ -3,48 +3,53 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/colorWhite">
 
-    <ImageView
-        android:id="@+id/imgHomeWorkoutPose"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/yogapose"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"/>
-
     <TextView
         android:id="@+id/txtHomeWorkoutName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HOME WORKOUT NAME"
-        android:layout_below="@id/imgHomeWorkoutPose"
-        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textSize="27sp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
         android:layout_marginRight="20dp"
         android:textColor="@color/black"/>
 
+    <ImageView
+        android:id="@+id/imgHomeWorkoutPose"
+        android:layout_width="200dp"
+        android:layout_below="@id/txtHomeWorkoutName"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/yogapose"
+        android:layout_centerHorizontal="true"/>
+
     <ScrollView
+        android:layout_marginTop="5dp"
         android:id="@+id/SCROLLER_ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
-        android:layout_below="@id/txtHomeWorkoutName"
+        android:layout_below="@id/imgHomeWorkoutPose"
         android:layout_centerHorizontal="true"
         android:fillViewport="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="60dp">
         <TextView
             android:id="@+id/txtHomeWorkoutDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:padding="6dp"
             android:justificationMode="inter_word"
-            android:paddingBottom="60dp"
-            android:layout_marginBottom="60dp"
             android:text="A handstand is the act of supporting the body in a stable, inverted vertical position by balancing on the hands. In a basic handstand, the body is held straight with arms and legs fully extended, with hands spaced approximately shoulder-width apart and the legs together."
             android:textColor="@color/black"
             android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
     </ScrollView>
 
 

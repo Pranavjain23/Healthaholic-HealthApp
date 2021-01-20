@@ -3,59 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_workout_session"
+    android:background="@color/colorWhite"
     tools:context=".fragments.HomeWorkoutFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@id/txtWelcome"
+        android:src="@drawable/homebackground"/>
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="WELCOME"
+        android:text="Get to your ideal body"
+        android:layout_above="@id/txtWelcome"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME WORKOUT TEXT"
-        android:layout_below="@id/welcome"
-        android:layout_centerInParent="true"
+        android:text="by exercising at home"
+        android:layout_above="@id/btnHomeWorkout"
+        android:textSize="20sp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
-
-    <TextView
-        android:id="@+id/txtSession"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtWelcome"
-        android:text="home workout session"
-        android:layout_centerInParent="true"
-        android:textAlignment="center"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
         android:layout_marginBottom="10dp"
-        android:textSize="12sp"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
 
 
-    <Button
+    <ImageButton
         android:id="@+id/btnHomeWorkout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="START THE SESSION"
-        android:layout_below="@id/txtSession"
-        android:background="@drawable/background_start_yoga_session"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_next"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/homeworkoutcircularbutton"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
         />
 
 </RelativeLayout>

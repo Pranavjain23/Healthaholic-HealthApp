@@ -82,7 +82,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/three"/>
+                android:src="@drawable/beggym"/>
 
         </RelativeLayout>
 
@@ -198,7 +198,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/three"/>
+                    android:src="@drawable/intgym"/>
 
             </RelativeLayout>
 
@@ -234,7 +234,7 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/three"/>
+                    android:src="@drawable/advgym"/>
 
             </LinearLayout>
 

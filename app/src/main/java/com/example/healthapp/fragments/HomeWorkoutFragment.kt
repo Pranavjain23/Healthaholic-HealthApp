@@ -7,11 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import com.example.healthapp.R
 import com.example.healthapp.activity.HomeWorkoutActivity
 
 class HomeWorkoutFragment : Fragment() {
-    lateinit var btnHomeWorkout : Button
+    lateinit var btnHomeWorkout : ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
