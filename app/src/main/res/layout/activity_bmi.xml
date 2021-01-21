@@ -63,7 +63,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/orange_background">
+            android:background="@drawable/purple_background">
 
             <ImageView
                 android:id="@+id/imgWeight"
@@ -89,6 +89,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtWeight"
                 android:hint="ENTER WEIGHT"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="2dp"
@@ -113,7 +115,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/waterbackground">
+                android:background="@drawable/purple_background">
 
                 <ImageView
                     android:id="@+id/imgHeight"
@@ -123,15 +125,14 @@
 
                 <TextView
                     android:id="@+id/txtHeight"
-                    android:layout_below="@id/imgHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/imgHeight"
                     android:layout_centerHorizontal="true"
                     android:text="HEIGHT(cm)"
+                    android:textColor="@color/colorWhite"
                     android:textSize="25sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/Height"
@@ -141,7 +142,8 @@
                     android:hint="ENTER HEIGHT"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="2dp"
-                    android:textColorHint="@color/black"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
                     android:layout_marginRight="2dp"
                     android:layout_centerHorizontal="true"
                     android:inputType="number" />
@@ -163,7 +165,7 @@
         android:layout_below="@id/llContent"
         android:padding="20dp"
         android:text="Calculate BMI "
-        android:background="@drawable/background_next"
+        android:background="@drawable/purple_background"
         tools:layout_editor_absoluteX="132dp"
         tools:layout_editor_absoluteY="434dp" />
 

@@ -190,6 +190,17 @@ class MainActivity : AppCompatActivity() {
         navigationView.setCheckedItem(R.id.gymWorkout)
     }
 
+    fun openDow(){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(
+            R.id.frame,
+            DimensionOfWellnessFragment()
+        )   // dashboard fragment is replacing the blank frame
+        transaction.commit()
+        //  supportActionBar?.title = "Gym Workout"    //giving the title to each fragment
+        navigationView.setCheckedItem(R.id.dimensionOfWellness)
+    }
+
     override fun onBackPressed() {
         val frag = supportFragmentManager.findFragmentById(R.id.frame)
 
@@ -209,6 +220,12 @@ class MainActivity : AppCompatActivity() {
             is WeightLoss -> openHome()
             is DietPlan -> openHome()
             is FormFeedbackFragment -> openHome()
+            is PhysicalFragment -> openDow()
+            is SocialFragment -> openDow()
+            is SpiritualFragment -> openDow()
+            is IntellectualFragment -> openDow()
+            is EmotionalFragment -> openDow()
+
 
             else -> super.onBackPressed()
         }

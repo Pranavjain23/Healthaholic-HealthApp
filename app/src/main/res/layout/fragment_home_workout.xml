@@ -18,7 +18,8 @@
         android:text="Get to your ideal body"
         android:layout_above="@id/txtWelcome"
         android:textStyle="bold"
-        android:layout_marginLeft="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="7dp"
         android:textColor="@color/colorAccent"
         android:textSize="30sp" />
@@ -30,7 +31,8 @@
         android:text="by exercising at home"
         android:layout_above="@id/btnHomeWorkout"
         android:textSize="20sp"
-        android:layout_marginLeft="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"/>
@@ -43,7 +45,8 @@
         android:src="@drawable/ic_next"
         android:layout_alignParentBottom="true"
         android:background="@drawable/homeworkoutcircularbutton"
-        android:layout_marginStart="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         />
 

@@ -15,12 +15,15 @@
         <menu>
             <item
                 android:id="@+id/gymWorkout"
+                android:icon="@drawable/ic_sets"
                 android:title="Gym Workout" />
             <item
                 android:id="@+id/yoga"
+                android:icon="@drawable/ic_yoga"
                 android:title="Yoga Workout"/>
             <item
                 android:id="@+id/homeWorkout"
+                android:icon="@drawable/ic_homeworkout"
                 android:title="Home Workout"/>
 
 

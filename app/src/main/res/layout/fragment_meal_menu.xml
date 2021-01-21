@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1.5"
-            android:src="@drawable/dinner"/>
+            android:src="@drawable/breakfast"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

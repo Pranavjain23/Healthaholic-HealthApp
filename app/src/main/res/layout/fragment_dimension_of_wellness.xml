@@ -21,7 +21,6 @@
             android:layout_margin="10dp">
 
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -227,7 +226,7 @@
                 android:clickable="true"
                 app:cardCornerRadius="5dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="20dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
