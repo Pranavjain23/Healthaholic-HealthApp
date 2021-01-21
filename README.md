@@ -1,0 +1,2 @@
+# HealthApp
+This app assists individuals in monitoring their own health conditions such as intellectual wellness, mental health and physical heath with easy-to-use step counter , calorie counter and BMI counter. The goal of our app is to make the experience of healthcare more efficient and satisfying for all people involved with The Healthaholic Team. The idea for this came to us when the Aatm Nirbhar App Innovation Challenge was introduced by the honourable Prime Minister of India.
