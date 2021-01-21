@@ -35,24 +35,54 @@ class DimensionOfWellnessFragment : Fragment() {
         intellectual = view.findViewById(R.id.intellectual)
 
         physical.setOnClickListener {
-            val intent = Intent(context, PhysicalActivity::class.java)
-            startActivity(intent)
+            val fragment = PhysicalFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
         social.setOnClickListener {
-            val intent = Intent(context, SocialActivity::class.java)
-            startActivity(intent)
+            val fragment = SocialFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
         emotional.setOnClickListener {
-            val intent = Intent(context, EmotionalActivity::class.java)
-            startActivity(intent)
+            val fragment = EmotionalFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
         spiritual.setOnClickListener {
-            val intent = Intent(context, SpiritualActivity::class.java)
-            startActivity(intent)
+            val fragment = SpiritualFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
         intellectual.setOnClickListener {
-            val intent = Intent(context, IntellectualActivity::class.java)
-            startActivity(intent)
+            val fragment = IntellectualFragment()
+            val args = Bundle()
+            fragment.arguments = args
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.frame,
+                    fragment
+                ).commit()
         }
         return  view
     }
