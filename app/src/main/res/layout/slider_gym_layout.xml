@@ -76,7 +76,7 @@
             android:layout_marginBottom="70dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:paddingBottom="60dp">
+            >
     <TextView
         android:id="@+id/txtYogaDesc"
         android:layout_width="match_parent"

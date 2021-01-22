@@ -28,8 +28,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         loadData()
         resetSteps()
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        val cal:Int=caloriesBurnt_func(totalSteps).toInt()
-        calories.text=cal.toString()
+
 
     }
 
@@ -58,6 +57,8 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
             progress_circular.apply {
                 setProgressWithAnimation(currentSteps.toFloat())
             }
+            val cal:Int=caloriesBurnt_func(currentSteps).toInt()
+            calories.text=cal.toString()
         }
     }
 
@@ -90,7 +91,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
 
 
     }
-    fun caloriesBurnt_func(StepCounts: Float): Double {
+    fun caloriesBurnt_func(StepCounts: Int): Double {
         return 0.045 * StepCounts
     }
 

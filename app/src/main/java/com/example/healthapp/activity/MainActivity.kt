@@ -210,7 +210,6 @@ class MainActivity : AppCompatActivity() {
             is AboutAppFragment -> openHome()
             is DimensionOfWellnessFragment -> openHome()
             is HomeWorkoutFragment -> openHome()
-            is AboutAppFragment->openHome()
             is Gym_routine_advance -> openGym()
             is Gym_routine_beginner -> openGym()
             is Gym_routine_intermediate -> openGym()
