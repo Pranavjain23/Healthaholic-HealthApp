@@ -1,11 +1,10 @@
 package com.example.healthapp.activity
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
-import android.view.View
 import android.widget.FrameLayout
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +16,7 @@ import com.example.healthapp.R
 import com.example.healthapp.fragments.*
 import com.google.android.material.navigation.NavigationView
 import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var frameLayout:FrameLayout
@@ -55,7 +55,18 @@ class MainActivity : AppCompatActivity() {
 //            drawerLayout.openDrawer(GravityCompat.START)
 //        }
 
-
+        val csl = ColorStateList(
+            arrayOf(
+                intArrayOf(-android.R.attr.state_checked),
+                intArrayOf(android.R.attr.state_checked)
+            ), intArrayOf(
+                Color.BLACK,
+                Color.RED
+            )
+        )
+        navigationView.itemTextColor = csl
+        navigationView.itemIconTintList = csl
+        navigationView.menu.getItem(0).isChecked = true
         navigationView.setNavigationItemSelectedListener {
 
             if (previousMenuItem!=null){
@@ -85,7 +96,7 @@ class MainActivity : AppCompatActivity() {
                             YogaFragment()
                         )
                         .commit()
-                 //      supportActionBar?.title = "Yoga Workout"
+                    //      supportActionBar?.title = "Yoga Workout"
                     drawerLayout.closeDrawers()
                 }
                 R.id.dimensionOfWellness -> {
@@ -103,7 +114,7 @@ class MainActivity : AppCompatActivity() {
                             R.id.frame,
                             HomeWorkoutFragment()
                         ).commit()
-                   //     supportActionBar?.title = "Home Workout"
+                    //     supportActionBar?.title = "Home Workout"
                     drawerLayout.closeDrawers()
                 }
 
@@ -138,7 +149,7 @@ class MainActivity : AppCompatActivity() {
                         )                                                                          // dashboard fragment is replacing the blank frame
                         .commit()
 
-                   // supportActionBar?.title = (getString(R.string.languagetitle))
+                    // supportActionBar?.title = (getString(R.string.languagetitle))
                     drawerLayout.closeDrawers()
                 }
 
@@ -214,7 +225,10 @@ class MainActivity : AppCompatActivity() {
             is Gym_routine_beginner -> openGym()
             is Gym_routine_intermediate -> openGym()
 
-            is MealMenuFragment -> openHome()
+            is MealMenuFragment ->{
+                openHome()
+                navigationView.menu.getItem(0).isChecked = true
+            }
             is WeightGain -> openHome()
             is WeightLoss -> openHome()
             is DietPlan -> openHome()
