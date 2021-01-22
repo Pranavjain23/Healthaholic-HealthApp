@@ -13,6 +13,7 @@ import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import com.example.healthapp.R
+import com.example.healthapp.activity.MainActivity
 import com.example.healthapp.model.DataFirebase
 import com.google.firebase.database.*
 
@@ -31,6 +32,8 @@ class FormFeedbackFragment : Fragment() {
     lateinit  var ref: DatabaseReference
     var selectedOption: Int =0
     var maxid = 0
+    lateinit var rb: RadioButton
+
     private lateinit var member: DataFirebase
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,6 +53,7 @@ class FormFeedbackFragment : Fragment() {
         radio3=view.findViewById(R.id.userOthers)
          submit=view.findViewById(R.id.btnUserSubmit)
         radio1.isChecked = true
+        rb=view.findViewById(R.id.userMale)
         member=DataFirebase()
         ref = FirebaseDatabase.getInstance().reference.child("User")
         ref.addValueEventListener(object : ValueEventListener {
@@ -71,8 +75,9 @@ class FormFeedbackFragment : Fragment() {
             member.setEmail(userMail.text.toString())
             member.setPhone(userPhone.text.toString())
             member.setAge(userAge.text.toString() )
-            member.setQuery(userQuery.text.toString() )
-            val rb: RadioButton = view.findViewById(selectedOption)
+            member.setQuery(userQuery.text.toString())
+            selectedOption=rg.checkedRadioButtonId
+            rb = view.findViewById(selectedOption)
             if(rb.text.equals("Male")){
                 member.setGender("Male")
             }else if(rb.text.equals("Female")){
@@ -86,7 +91,14 @@ class FormFeedbackFragment : Fragment() {
             dialog.setTitle("Thankyou!")
             dialog.setMessage("Your feedback is valuable to us. Our team will reach you out at "+userMail.text.toString())
             dialog.setPositiveButton("OKAY"){ text,listener ->
-                       activity?.finish()
+                val fragment = HomeFragment()
+                val args = Bundle()
+                fragment.arguments = args
+                (context as MainActivity).supportFragmentManager.beginTransaction()
+                    .replace(
+                        R.id.frame,
+                        fragment
+                    ).commit()
             }
 
             dialog.setNegativeButton(""){ text, listener ->

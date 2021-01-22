@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         openHome()
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.isDrawerIndicatorEnabled = true;
+        actionBarDrawerToggle.isDrawerIndicatorEnabled = true
 
         actionBarDrawerToggle.syncState()
 //        actionBarDrawerToggle.setToolbarNavigationClickListener {

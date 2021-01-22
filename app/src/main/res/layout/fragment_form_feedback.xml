@@ -20,7 +20,7 @@
            android:layout_height="wrap_content"
            android:text="Contact Us"
            android:textSize="24sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            />
 
@@ -38,7 +38,7 @@
            android:layout_height="wrap_content"
            android:text="Name"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="16dp"
            />
@@ -60,7 +60,7 @@
            android:layout_height="wrap_content"
            android:text="Age"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="8dp"
            />
@@ -82,7 +82,7 @@
            android:layout_height="wrap_content"
            android:text="Gender"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="8dp"
            />
@@ -126,7 +126,7 @@
            android:layout_height="wrap_content"
            android:text="Email"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="8dp"
            />
@@ -147,7 +147,7 @@
            android:layout_height="wrap_content"
            android:text="Phone Number"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="8dp"
            />
@@ -169,7 +169,7 @@
            android:layout_height="wrap_content"
            android:text="Any Query/Feedback"
            android:textSize="18sp"
-           android:textColor="@color/black"
+           android:textColor="@color/colorPrimaryDark"
            android:textStyle="bold"
            android:layout_marginTop="8dp"
            />

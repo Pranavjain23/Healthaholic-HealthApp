@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthapp.R
@@ -15,7 +16,7 @@ import kotlinx.android.synthetic.main.step_counter_activity.*
 class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
 
     private var sensorManager : SensorManager? = null
-
+    private lateinit var calories: TextView
     private var running = false
     private var totalSteps = 0f
     private var previousTotalSteps = 0f
@@ -23,10 +24,12 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.step_counter_activity)
-
+        calories=findViewById(R.id.calories_burnt)
         loadData()
         resetSteps()
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        val cal:Int=caloriesBurnt_func(totalSteps).toInt()
+        calories.text=cal.toString()
 
     }
 
@@ -36,9 +39,9 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         val stepSensor= sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
 
         if(stepSensor == null){
-            Toast.makeText(this,"No Sensor detected on this device", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "No Sensor detected on this device", Toast.LENGTH_SHORT).show()
         }else{
-            sensorManager?.registerListener(this,stepSensor,SensorManager.SENSOR_DELAY_UI)
+            sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
         }
     }
 
@@ -60,7 +63,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
 
     private fun resetSteps(){
         tv_stepsTaken.setOnClickListener {
-            Toast.makeText(this,"Long tap to restart steps",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Long tap to restart steps", Toast.LENGTH_SHORT).show()
         }
 
         tv_stepsTaken.setOnLongClickListener{
@@ -73,19 +76,22 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
     }
 
     private fun saveData() {
-        val sharedPreferences = getSharedPreferences("myPrefs",Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
         val editor  = sharedPreferences.edit()
-        editor.putFloat("key1",previousTotalSteps)
+        editor.putFloat("key1", previousTotalSteps)
         editor.apply()
     }
 
     private fun loadData(){
-        val sharedPreferences = getSharedPreferences("myPrefs",Context.MODE_PRIVATE)
-        val savedNumber = sharedPreferences.getFloat("key1",0f)
-        Log.d("StepCounter","$savedNumber")
+        val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val savedNumber = sharedPreferences.getFloat("key1", 0f)
+        Log.d("StepCounter", "$savedNumber")
         previousTotalSteps = savedNumber
 
 
+    }
+    fun caloriesBurnt_func(StepCounts: Float): Double {
+        return 0.045 * StepCounts
     }
 
 }
