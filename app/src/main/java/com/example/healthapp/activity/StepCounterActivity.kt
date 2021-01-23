@@ -7,10 +7,12 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthapp.R
+import com.example.healthapp.fragments.PhysicalFragment
 import kotlinx.android.synthetic.main.step_counter_activity.*
 
 class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
@@ -20,11 +22,16 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
     private var running = false
     private var totalSteps = 0f
     private var previousTotalSteps = 0f
+    lateinit var backArrow : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.step_counter_activity)
         calories=findViewById(R.id.calories_burnt)
+        backArrow=findViewById(R.id.backArrow)
+        backArrow.setOnClickListener {
+
+        }
         loadData()
         resetSteps()
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
@@ -89,8 +96,8 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         Log.d("StepCounter", "$savedNumber")
         previousTotalSteps = savedNumber
 
-
     }
+
     fun caloriesBurnt_func(StepCounts: Int): Double {
         return 0.045 * StepCounts
     }
