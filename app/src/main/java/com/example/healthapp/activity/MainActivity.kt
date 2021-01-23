@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             R.string.close_drawer
         )
         setUpToolbar()
-        menuInflater
+        navigationView.setBackgroundColor(Color.YELLOW)
 
 
         openHome()
@@ -60,13 +60,14 @@ class MainActivity : AppCompatActivity() {
                 intArrayOf(-android.R.attr.state_checked),
                 intArrayOf(android.R.attr.state_checked)
             ), intArrayOf(
-                Color.BLACK,
-                Color.RED
+                Color.MAGENTA,
+                Color.BLUE
             )
         )
         navigationView.itemTextColor = csl
         navigationView.itemIconTintList = csl
         navigationView.menu.getItem(0).isChecked = true
+
         navigationView.setNavigationItemSelectedListener {
 
             if (previousMenuItem!=null){
@@ -146,7 +147,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(
                             R.id.frame,
                             FormFeedbackFragment()
-                        )                                                                          // dashboard fragment is replacing the blank frame
+                        )
                         .commit()
 
                     // supportActionBar?.title = (getString(R.string.languagetitle))
@@ -179,43 +180,46 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun openHome(){
-        val fragment = HomeFragment()
+    private fun openHome(){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(
             R.id.frame,
             HomeFragment()
-        )   // dashboard fragment is replacing the blank frame
+        )
         transaction.commit()
-   //     supportActionBar?.title = "Health And Wellness"    //giving the title to each fragment
+   //     supportActionBar?.title = "Health And Wellness"
         navigationView.setCheckedItem(R.id.home)
+        previousMenuItem?.isChecked = false
     }
-    fun openGym(){
+    private fun openGym(){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(
             R.id.frame,
             GymFragment()
-        )   // dashboard fragment is replacing the blank frame
+        )
         transaction.commit()
-      //  supportActionBar?.title = "Gym Workout"    //giving the title to each fragment
+      //  supportActionBar?.title = "Gym Workout"
         navigationView.setCheckedItem(R.id.gymWorkout)
+        previousMenuItem?.isChecked = false
+
     }
 
-    fun openDow(){
+    private fun openDow(){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(
             R.id.frame,
             DimensionOfWellnessFragment()
-        )   // dashboard fragment is replacing the blank frame
+        )
         transaction.commit()
-        //  supportActionBar?.title = "Gym Workout"    //giving the title to each fragment
+        //  supportActionBar?.title = "Gym Workout"
         navigationView.setCheckedItem(R.id.dimensionOfWellness)
+        previousMenuItem?.isChecked = false
+
     }
 
     override fun onBackPressed() {
-        val frag = supportFragmentManager.findFragmentById(R.id.frame)
 
-        when(frag){
+        when(supportFragmentManager.findFragmentById(R.id.frame)){
             is GymFragment -> openHome()
             is YogaFragment -> openHome()
             is AboutAppFragment -> openHome()
@@ -225,10 +229,8 @@ class MainActivity : AppCompatActivity() {
             is Gym_routine_beginner -> openGym()
             is Gym_routine_intermediate -> openGym()
 
-            is MealMenuFragment ->{
-                openHome()
-                navigationView.menu.getItem(0).isChecked = true
-            }
+            is MealMenuFragment ->  openHome()
+
             is WeightGain -> openHome()
             is WeightLoss -> openHome()
             is DietPlan -> openHome()

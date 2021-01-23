@@ -49,10 +49,8 @@
         android:layout_height="match_parent"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/menu_items"
-        app:itemBackground = "@drawable/background_next"
-        android:layout_gravity="start"
-
-        />
+        android:layout_gravity="start" />
+    <!--        app:itemBackground = "@drawable/background_next"-->
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
