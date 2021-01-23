@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/colorWhite">
 
@@ -7,14 +8,15 @@
         android:id="@+id/txtHomeWorkoutName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME WORKOUT NAME"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textSize="27sp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="65dp"
         android:layout_marginRight="20dp"
-        android:textColor="@color/black"/>
+        android:text="HOME WORKOUT NAME"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/advent_pro_bold" />
 
     <ImageView
         android:id="@+id/imgHomeWorkoutPose"
@@ -42,15 +44,17 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:paddingBottom="60dp">
-        <TextView
-            android:id="@+id/txtHomeWorkoutDesc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="6dp"
-            android:justificationMode="inter_word"
-            android:text="A handstand is the act of supporting the body in a stable, inverted vertical position by balancing on the hands. In a basic handstand, the body is held straight with arms and legs fully extended, with hands spaced approximately shoulder-width apart and the legs together."
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtHomeWorkoutDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="6dp"
+                android:text="A handstand is the act of supporting the body in a stable, inverted vertical position by balancing on the hands. In a basic handstand, the body is held straight with arms and legs fully extended, with hands spaced approximately shoulder-width apart and the legs together."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:fontFamily="@font/advent_pro" />
         </androidx.cardview.widget.CardView>
     </ScrollView>
 

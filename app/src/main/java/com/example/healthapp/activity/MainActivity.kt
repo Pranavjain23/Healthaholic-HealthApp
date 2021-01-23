@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             R.string.close_drawer
         )
         setUpToolbar()
-        navigationView.setBackgroundColor(Color.YELLOW)
 
 
         openHome()
@@ -60,13 +59,12 @@ class MainActivity : AppCompatActivity() {
                 intArrayOf(-android.R.attr.state_checked),
                 intArrayOf(android.R.attr.state_checked)
             ), intArrayOf(
-                Color.MAGENTA,
-                Color.BLUE
+                Color.BLACK,
+                Color.MAGENTA
             )
         )
         navigationView.itemTextColor = csl
         navigationView.itemIconTintList = csl
-        navigationView.menu.getItem(0).isChecked = true
 
         navigationView.setNavigationItemSelectedListener {
 

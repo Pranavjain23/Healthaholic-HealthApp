@@ -1,14 +1,17 @@
 package com.example.healthapp.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthapp.R
+import com.example.healthapp.fragments.HomeFragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_bmi.*
 
@@ -18,6 +21,7 @@ class BmiActivity : AppCompatActivity() {
     lateinit var height : EditText
     lateinit var btnBmi : Button
     lateinit var result : TextView
+    lateinit var backArrow : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +33,11 @@ class BmiActivity : AppCompatActivity() {
         btnBmi = findViewById(R.id.btn_bmi)
         result = findViewById(R.id.txtResult)
 
+        backArrow=findViewById(R.id.backArrow)
+        backArrow.setOnClickListener {
+            val myintent = Intent(this, HomeFragment::class.java)
+            startActivity(myintent)
+        }
         btnBmi.setOnClickListener(
             View.OnClickListener
             // Logic for validation, input can't be empty

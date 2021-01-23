@@ -35,6 +35,10 @@
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day3" />
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day4" />
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day5" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

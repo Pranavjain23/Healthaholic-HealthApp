@@ -34,18 +34,28 @@ class SliderAdapter_yoga(val context: Context) : PagerAdapter() {
     )
 
     val slide_headings = arrayOf(
-        "Tadasana (Mountain Pose)",
-        "Vrikshasana (Tree Pose)",
-        "Adho Mukho Svanasana (Downward Facing Dog Pose)",
-        "Trikonasana (Triangle Pose)",
-        "Kursiasana (Chair Pose)",
-        "Naukasana (Boat Pose)",
-        "Bhujangasana (Cobra Pose)",
+        "Tadasana ",
+        "Vrikshasana",
+        "Adho Mukho Svanasana",
+        "Trikonasana",
+        "Kursiasana",
+        "Naukasana",
+        "Bhujangasana",
         "Paschimottanasana",
         "Child's Pose",
         "Sukhasna"
 
     )
+//    "Tadasana (Mountain Pose)",
+//    "Vrikshasana (Tree Pose)",
+//    "Adho Mukho Svanasana (Downward Facing Dog Pose)",
+//    "Trikonasana (Triangle Pose)",
+//    "Kursiasana (Chair Pose)",
+//    "Naukasana (Boat Pose)",
+//    "Bhujangasana (Cobra Pose)",
+//    "Paschimottanasana",
+//    "Child's Pose",
+//    "Sukhasna"
 
     val slide_descs = arrayOf(
         "This pose teaches one to stand with majestic steadiness like a mountain. The word ‘Tada' means a mountain, that's where the name comes from. It involves the major groups of muscles and improves focus and concentration. It is the starting position for all the other asanas.\n" +
