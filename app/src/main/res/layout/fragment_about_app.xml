@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AboutAppFragment"
@@ -17,39 +17,74 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/AboutappHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="ABOUT OUR APP"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEAM HEATHAHOLIC"
+                    android:textSize="12sp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Aboutapp"
+            android:layout_below="@id/AboutappHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             app:cardCornerRadius="4dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="20dp">
-                <TextView
-                    android:id="@+id/AboutAppHeader"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="About our app"
-                    android:textStyle="bold"
-                    android:textSize="25sp"
-                    android:textColor="@color/colorPrimary"/>
+                android:padding="10dp"
+                android:orientation="vertical">
+
 
                 <TextView
-                    android:id="@+id/txtAboutApp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
-                    android:textColor="@color/black"
                     android:text="The primary goal of this app is eat healthy and get fit. This app assists individuals in monitoring their own health conditions such as intellectual wellness, mental health and physical heath with easy-to-use step counter, calorie counter and bmi counter. The goal of our app is to make the experience of healthcare more efficient and satisfying for all people involved with The Healthaholic Team. It gives you access to health related information such as the yoga asana, gym exercises and  Home workout, even if your posture has been a problem for years, it's possible to make improvements. It provides you with healthy recipes and the best diet plans.The Healthaholic is the simplest and most effective healthy eating &amp; weight loss app."
-                    android:layout_below="@id/AboutAppHeader"
-                    android:layout_marginTop="10dp"
-                    />
-            </RelativeLayout>
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/caveat" />
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <Button
@@ -57,15 +92,16 @@
             android:paddingLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="45dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:textAlignment="textStart"
             android:text="App Creator Team"
             android:drawableLeft="@drawable/ic_creator"
             android:drawablePadding="15dp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@color/black"
             android:layout_below="@id/Aboutapp"/>

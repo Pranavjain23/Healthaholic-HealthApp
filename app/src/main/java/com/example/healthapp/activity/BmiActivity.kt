@@ -35,8 +35,7 @@ class BmiActivity : AppCompatActivity() {
 
         backArrow=findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
-            val myintent = Intent(this, HomeFragment::class.java)
-            startActivity(myintent)
+            finish()
         }
         btnBmi.setOnClickListener(
             View.OnClickListener

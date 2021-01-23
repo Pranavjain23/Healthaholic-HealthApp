@@ -15,6 +15,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthapp.R
 import com.example.healthapp.fragments.HomeFragment
+import com.example.healthapp.fragments.YogaFragment
 import com.google.android.material.internal.ContextUtils.getActivity
 import kotlinx.android.synthetic.main.step_counter_activity.*
 
@@ -34,7 +35,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         calories=findViewById(R.id.calories_burnt)
         backArrow=findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
-
+            finish()
         }
         loadData()
         resetSteps()

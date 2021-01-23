@@ -15,7 +15,6 @@ import com.example.healthapp.BuildConfig
 import com.example.healthapp.R
 import com.example.healthapp.fragments.*
 import com.google.android.material.navigation.NavigationView
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -46,13 +45,9 @@ class MainActivity : AppCompatActivity() {
 
 
         openHome()
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.isDrawerIndicatorEnabled = true
 
+        drawerLayout.addDrawerListener(actionBarDrawerToggle)   //making work hamburger icon
         actionBarDrawerToggle.syncState()
-//        actionBarDrawerToggle.setToolbarNavigationClickListener {
-//            drawerLayout.openDrawer(GravityCompat.START)
-//        }
 
         val csl = ColorStateList(
             arrayOf(
@@ -60,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 intArrayOf(android.R.attr.state_checked)
             ), intArrayOf(
                 Color.BLACK,
-                Color.MAGENTA
+                Color.parseColor("#EF4872")
             )
         )
         navigationView.itemTextColor = csl
@@ -77,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             previousMenuItem = it
 
             when(it.itemId) {
-                R.id.home -> {
+                R.id.homee -> {
                     supportFragmentManager.beginTransaction()
                     openHome()
                     drawerLayout.closeDrawers()
@@ -161,16 +156,14 @@ class MainActivity : AppCompatActivity() {
     private fun setUpToolbar(){
         setSupportActionBar(toolbar)
      //   supportActionBar?.title = "Toolbar title"
-        supportActionBar?.setDisplayShowTitleEnabled(true);
+   //     supportActionBar?.setDisplayShowTitleEnabled(false);
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         val id = item.itemId
-
-        if(id==android.R.id.home)
-        {
+        if(id==android.R.id.home) {
             drawerLayout.openDrawer(GravityCompat.START)
         }
 
@@ -186,8 +179,10 @@ class MainActivity : AppCompatActivity() {
         )
         transaction.commit()
    //     supportActionBar?.title = "Health And Wellness"
-        navigationView.setCheckedItem(R.id.home)
         previousMenuItem?.isChecked = false
+
+        navigationView.setCheckedItem(R.id.homee)
+
     }
     private fun openGym(){
         val transaction = supportFragmentManager.beginTransaction()
@@ -197,8 +192,9 @@ class MainActivity : AppCompatActivity() {
         )
         transaction.commit()
       //  supportActionBar?.title = "Gym Workout"
-        navigationView.setCheckedItem(R.id.gymWorkout)
         previousMenuItem?.isChecked = false
+
+        navigationView.setCheckedItem(R.id.gymWorkout)
 
     }
 
@@ -210,8 +206,9 @@ class MainActivity : AppCompatActivity() {
         )
         transaction.commit()
         //  supportActionBar?.title = "Gym Workout"
-        navigationView.setCheckedItem(R.id.dimensionOfWellness)
         previousMenuItem?.isChecked = false
+
+        navigationView.setCheckedItem(R.id.dimensionOfWellness)
 
     }
 
