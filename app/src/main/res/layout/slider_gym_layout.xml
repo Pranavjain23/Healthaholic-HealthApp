@@ -69,13 +69,13 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
         android:layout_below="@id/txtYogaReps"
+        android:layout_marginBottom="70dp"
         android:layout_centerHorizontal="true"
         android:fillViewport="true">
 
         <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         >
