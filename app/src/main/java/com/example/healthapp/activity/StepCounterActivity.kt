@@ -56,7 +56,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         calories=findViewById(R.id.calories_burnt)
         backArrow=findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
-
+            finish()
         }
 
 

@@ -36,7 +36,7 @@ class excerciseAdvAdapter (val context : Context,
     }
     class excerciseAdvViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
-        val imgAppLogo : ImageView = view.findViewById(R.id.imgAppLogo)
+    //    val imgAppLogo : ImageView = view.findViewById(R.id.imgAppLogo)
         val txtAdvantage : TextView = view.findViewById(R.id.txtAdvantage)
 
 
