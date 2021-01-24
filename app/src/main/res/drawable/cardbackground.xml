@@ -22,9 +22,9 @@
 
             <gradient
                 android:type="linear"
-                android:endColor="#FBB040 "
+                android:endColor="#F05C78"
                 android:centerColor="#ffffff"
-                android:startColor="#F05C78"
+                android:startColor="#FBB040"
                 android:useLevel="false"/>
             <corners android:radius="15dp"
                 />

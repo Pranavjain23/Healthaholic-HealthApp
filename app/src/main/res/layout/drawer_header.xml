@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 android:layout_height="150dp"
-android:background="@drawable/headerbackground"
+android:background="@color/colorPrimaryDark"
     android:weightSum="7"
 android:orientation="vertical">
 
@@ -17,15 +17,15 @@ android:orientation="vertical">
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:layout_weight="5"
-        android:scaleType="center"
-        android:src="@drawable/logo2"
+        android:src="@drawable/user"
          />
     <TextView
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:textAlignment="center"

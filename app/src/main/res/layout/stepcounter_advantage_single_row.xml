@@ -11,7 +11,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
-        android:background="#e0e0e0"
+        android:background="@drawable/headerbackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,11 +20,11 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/walk"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
 
         <TextView
             android:id="@+id/txtAdvantage"
@@ -32,8 +32,9 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:layout_margin="10dp"
-            android:layout_below="@id/imgAppLogo"
             android:textAlignment="center"
+            android:layout_below="@id/imgAppLogo"
+
             android:text="Advantage Description"
             android:textColor="@color/black"/>
 
