@@ -28,6 +28,13 @@ class AppCreatorFragment : Fragment() {
 
 
 
+        val link1 = view.findViewById<TextView>(R.id.txtMyId1)
+        link1.text = Html.fromHtml("<a href=\"mailto:ipranavjain@gmail.com\">ipranavjain@gmail.com</a>")
+        link1.movementMethod = LinkMovementMethod.getInstance()
+
+        val feedback1 = view.findViewById<TextView>(R.id.feedbackPranav)
+        feedback1.movementMethod = LinkMovementMethod.getInstance()
+
         return view
     }
     private fun getActionBar(): androidx.appcompat.app.ActionBar? {

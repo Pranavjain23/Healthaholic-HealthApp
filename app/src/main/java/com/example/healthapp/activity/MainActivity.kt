@@ -236,6 +236,7 @@ class MainActivity : AppCompatActivity() {
             is IntellectualFragment -> openDow()
             is EmotionalFragment -> openDow()
 
+            is AppCreatorFragment -> openHome()
 
             else -> super.onBackPressed()
         }

@@ -24,9 +24,10 @@
                 android:layout_height="wrap_content"
                 android:text="Physical"
                 android:textSize="29sp"
-                android:paddingLeft="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/colorPrimaryDark"
                 />
 
             <TextView
@@ -34,9 +35,10 @@
                 android:layout_height="wrap_content"
                 android:text="Wellness"
                 android:textSize="19sp"
-                android:paddingStart="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
 
@@ -44,6 +46,8 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1.5"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
             android:src="@drawable/physical"/>
     </LinearLayout>
 
@@ -59,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorLightPink"
+            android:background="@color/colorPrimary"
             android:textColor="@color/black"
             android:text="Physical wellness promotes proper care of our bodies for optimal health and functioning. There are many elements of physical wellness that all must be cared for together. Overall physical wellness encourages the balance of physical activity, nutrition and mental well-being to keep your body in top condition. Obtaining an optimal level of physical wellness allows you to nurture personal responsibility for your own health. As you become conscious of your physical health, you are able to identify elements you are successful in as well as elements you would like to improve."
             android:padding="20dp"/>
@@ -84,6 +88,7 @@
         android:layout_height="wrap_content"
         android:entries="@array/PhysicalEntries"
         android:layout_below="@id/txtRoute"
-        android:background="@color/colorLightPink"
-        android:layout_margin="10dp"/>
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        />
 </RelativeLayout>

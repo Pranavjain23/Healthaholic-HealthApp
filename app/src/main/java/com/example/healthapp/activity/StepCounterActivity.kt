@@ -69,7 +69,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         viewPager3 = findViewById(R.id.excerciseAdvViewPager2)
         excerciseAdvList2.add(excerciseadv("Running has the Power to Eliminate Depression."))
         excerciseAdvList2.add(excerciseadv("Running Boosts Your Confidence."))
-        excerciseAdvList2.add(excerciseadv("Running is one of the best forms of exercise for losing or maintaining a consistent weight."))
+        excerciseAdvList2.add(excerciseadv("Running helps in maintaining a consistent weight."))
         excerciseAdvList2.add(excerciseadv("It Improves Your Health"))
 
         viewPager4 = findViewById(R.id.excerciseAdvViewPager3)
@@ -79,7 +79,7 @@ class StepCounterActivity  : AppCompatActivity(), SensorEventListener {
         excerciseAdvList3.add(excerciseadv("Good for the Heart"))
 
         viewPager5 = findViewById(R.id.excerciseAdvViewPager4)
-        excerciseAdvList4.add(excerciseadv("Climbing stairs improves health. It releases more endorphins, which helps you feel good."))
+        excerciseAdvList4.add(excerciseadv("Climbing stairs improves health. It releases more endorphins."))
         excerciseAdvList4.add(excerciseadv("It helps regulate your sleep pattern better."))
         excerciseAdvList4.add(excerciseadv("It Challenges Your Cardiovascular System."))
         excerciseAdvList4.add(excerciseadv("It Can Help Improve Coordination"))

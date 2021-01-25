@@ -71,7 +71,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/llContentMain"/>
 
     <androidx.cardview.widget.CardView
@@ -211,7 +211,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/btnBMI"/>
 
     <LinearLayout
@@ -235,7 +235,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/green_background">
+                android:background="@drawable/breakfast_background">
 
             <ImageView
                 android:id="@+id/imgBreakfast"
@@ -477,7 +477,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/txtMealMenu"/>
 
 
@@ -496,6 +496,7 @@
         android:padding="15dp"
         android:text="Our personalized Diet and Gain Plans"
         android:textColor="@color/colorWhite"
+        android:textStyle="bold"
         android:textSize="16sp" />
 
     <TextView
@@ -516,7 +517,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/txtDietPlan"/>
 
 
@@ -573,7 +574,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="3dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:textSize="10sp"
         />
 </RelativeLayout>

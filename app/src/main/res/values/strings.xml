@@ -31,6 +31,9 @@
     <string name="feedback">
     <a href="https://www.linkedin.com/in/bhoomikagarg/">bhoomikaGarg</a>
 </string>
+    <string name="feedbackPranav">
+    <a href="https://www.linkedin.com/in/pranav-jain-9414a71a0/">pranavJain</a>
+</string>
     <string-array name="PhysicalEntries">
         <item>Engage in physical activity everyday for 30 minutes. You may break up your daily 30 minutes into 10 minutes bouts.</item>
         <item>Use stairs instead of the elevator or escalator and walk whenever possible.</item>
@@ -80,5 +83,6 @@
     <string name="weightLoss">
         weightLoss
     </string>
+    <string name="pranavjain">pranavjain</string>
 
 </resources>

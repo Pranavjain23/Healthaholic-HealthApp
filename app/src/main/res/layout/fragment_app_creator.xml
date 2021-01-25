@@ -5,26 +5,47 @@
     android:layout_height="match_parent"
     tools:context=".fragments.AppCreatorFragment">
 
-    <RelativeLayout
-        android:id="@+id/llContent"
+    <LinearLayout
+        android:id="@+id/AboutappHeader"
         android:layout_width="match_parent"
-
-        android:padding="5dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center">
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="6">
 
-        <TextView
-            android:id="@+id/txtWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:text="App Creator Team"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="4">
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="App Creator Team"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEAM HEATHAHOLIC"
+                android:textSize="12sp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
 
 
     <!--<TextView
@@ -45,7 +66,7 @@
         android:id="@+id/llContent1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llContent"
+        android:layout_below="@id/AboutappHeader"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
@@ -69,6 +90,7 @@
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
                 android:layout_weight="3.5">
 
                 <TextView
@@ -77,7 +99,8 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="Bhoomika Garg"
-                    android:textColor="#000000"
+                    android:fontFamily="@font/amiko"
+                    android:textColor="@color/colorWhite"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -92,7 +115,8 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="bhoomika.garg.9@gmail.com"
-                    android:textColor="#000000"
+                    android:textColorLink="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
                     android:textSize="15sp" />
 
                 <TextView
@@ -104,7 +128,8 @@
                     android:drawableLeft="@drawable/ic_linkedin"
                     android:padding="8dp"
                     android:text="@string/feedback"
-                    android:textColor="@color/colorPrimary"
+                    android:textColorLink="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -137,6 +162,7 @@
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
                 android:layout_weight="3.5">
 
                 <TextView
@@ -145,8 +171,9 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="Pranav Jain"
-                    android:textColor="#000000"
+                    android:textColor="@color/colorWhite"
                     android:textSize="18sp"
+                    android:fontFamily="@font/amiko"
                     android:textStyle="bold" />
 
                 <TextView
@@ -160,20 +187,22 @@
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:text="ipranavjain@gmail.com"
-                    android:textColor="#000000"
+                    android:textColor="@color/colorWhite"
+                    android:textColorLink="@color/colorWhite"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/txtContactNumber1"
+                    android:id="@+id/feedbackPranav"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtMyId1"
                     android:drawablePadding="5dp"
+                    android:textColorLink="@color/colorWhite"
                     android:padding="8dp"
                     android:drawableLeft="@drawable/ic_linkedin"
-                    android:text="pranavjain"
-                    android:textColor="#357a38"
+                    android:text="@string/feedbackPranav"
                     android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
 
 
@@ -197,7 +226,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAlignment="center"
-        android:text="Healthaholic" />
+        android:textSize="20sp"
+        android:fontFamily="@font/caveat"
+        android:text="HEALTHAHOLIC" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -207,6 +238,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAlignment="center"
+        android:fontFamily="@font/caveat"
         android:text="Privacy Policy" />
 
 

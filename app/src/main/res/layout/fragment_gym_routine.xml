@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Find Your"
         android:layout_marginTop="15dp"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary"
         android:layout_marginLeft="20dp"
         android:textSize="20sp" />
     <TextView

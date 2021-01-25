@@ -24,9 +24,10 @@
                 android:layout_height="wrap_content"
                 android:text="Emotional"
                 android:textSize="29sp"
-                android:paddingLeft="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/colorPrimaryDark"
                 />
 
             <TextView
@@ -34,9 +35,10 @@
                 android:layout_height="wrap_content"
                 android:text="Wellness"
                 android:textSize="19sp"
-                android:paddingStart="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
 
@@ -44,6 +46,8 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1.5"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
             android:src="@drawable/emotional"/>
     </LinearLayout>
 
@@ -57,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorLightPink"
+            android:background="@color/colorPrimary"
             android:textColor="@color/black"
             android:text="Emotional wellness inspires self-care, relaxation, stress reduction and the development of inner strength. It is important to be attentive to both positive and negative feelings and be able to understand how to handle these emotions. Emotional wellness also includes the ability to learn and grow from experiences. Emotional well-being encourages autonomy and proper decision making skills. It is an important part of overall wellness."
             android:padding="20dp"/>
@@ -82,7 +86,7 @@
         android:layout_height="wrap_content"
         android:entries="@array/EmotionalEntries"
         android:layout_below="@id/txtRoute"
-        android:background="@color/colorLightPink"
+        android:background="@color/colorPrimary"
         android:layout_margin="10dp"/>
 
 

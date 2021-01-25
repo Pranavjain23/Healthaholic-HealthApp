@@ -39,7 +39,7 @@
                         android:textSize="22sp"
                         android:paddingStart="10dp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/colorPrimaryDark"
                         />
 
                     <TextView
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5"
                     android:padding="10dp"
-                    android:background="#fafafa">
+                    android:background="@drawable/pink_background">
 
 
                     <ImageView
@@ -93,6 +93,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/caveat"
                         android:text="PHYSICAL WELLNESS"
                         android:textSize="18sp"/>
                     </RelativeLayout>
@@ -106,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -115,7 +117,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5"
                     android:padding="10dp"
-                    android:background="#fafafa">
+                    android:background="@drawable/pink_background">
 
                     <RelativeLayout
                         android:layout_weight="3"
@@ -125,8 +127,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
                             android:layout_centerInParent="true"
                             android:text="EMOTIONAL WELLNESS"
+                            android:fontFamily="@font/caveat"
                             android:textSize="18sp"/>
                     </RelativeLayout>
 
@@ -145,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -154,7 +158,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5"
                     android:padding="10dp"
-                    android:background="#fafafa">
+                    android:background="@drawable/pink_background">
 
 
                     <ImageView
@@ -171,8 +175,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
                             android:layout_centerInParent="true"
                             android:text="SOCIAL WELLNESS"
+                            android:fontFamily="@font/caveat"
                             android:textSize="18sp"/>
                     </RelativeLayout>
 
@@ -185,7 +191,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginTop="10dp"
                 >
                 <LinearLayout
@@ -194,19 +200,22 @@
                     android:orientation="horizontal"
                     android:weightSum="5"
                     android:padding="10dp"
-                    android:background="#fafafa">
+                    android:background="@drawable/pink_background">
 
                     <RelativeLayout
                         android:layout_weight="3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:layout_centerInParent="true"
                             android:text="SPIRITUAL WELLNESS"
-                            android:textSize="18sp"/>
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/caveat"
+                            android:textStyle="bold" />
                     </RelativeLayout>
 
                     <ImageView
@@ -224,7 +233,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 >
@@ -234,7 +243,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5"
                     android:padding="10dp"
-                    android:background="#fafafa">
+                    android:background="@drawable/pink_background">
 
 
                     <ImageView
@@ -251,8 +260,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
                             android:layout_centerInParent="true"
                             android:text="INTELLECTUAL WELLNESS"
+                            android:fontFamily="@font/caveat"
                             android:textSize="18sp"/>
                     </RelativeLayout>
 
