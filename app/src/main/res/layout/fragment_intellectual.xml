@@ -27,7 +27,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#fea607"
                 />
 
             <TextView
@@ -38,7 +38,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#fea607"/>
 
         </LinearLayout>
 
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/lightpink"
             android:textColor="@color/black"
             android:text="Intellectual wellness encourages us to engage in creative and mentally-stimulating activities. These activities should expand your knowledge and skills while allowing you to share your knowledge and skills with others. Intellectual wellness can be developed through academics, cultural involvement, community involvement and personal hobbies. As intellectual wellness develops, you are able to develop personal resources that work together with the other realms of wellness in order to be achieve a more balanced life."
             android:padding="25dp"/>

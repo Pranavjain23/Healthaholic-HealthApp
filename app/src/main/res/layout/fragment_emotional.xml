@@ -27,7 +27,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#BB2032"
                 />
 
             <TextView
@@ -38,7 +38,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#BB2032"/>
 
         </LinearLayout>
 
@@ -63,10 +63,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:background="@color/lightpink"
             android:text="Emotional wellness inspires self-care, relaxation, stress reduction and the development of inner strength. It is important to be attentive to both positive and negative feelings and be able to understand how to handle these emotions. Emotional wellness also includes the ability to learn and grow from experiences. Emotional well-being encourages autonomy and proper decision making skills. It is an important part of overall wellness."
             android:padding="25dp"/>
     </androidx.cardview.widget.CardView>
-<!--    android:background="@color/colorPrimary"-->
 
 
     <TextView

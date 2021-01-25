@@ -26,7 +26,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#182B55"
                 />
 
             <TextView
@@ -37,7 +37,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#182B55"/>
 
         </LinearLayout>
 
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/lightpink"
             android:textColor="@color/black"
             android:text="Social wellness refers to the relationships we have and how we interact with others. Our relationships can offer support during difficult times. Social wellness involves building healthy, nurturing and supportive relationships as well as fostering a genuine connection with those around you. Conscious actions are important in learning how to balance your social life with your academic and professional lives. Social wellness also includes balancing the unique needs of romantic relationships with other parts of your life."
             android:padding="25dp"/>

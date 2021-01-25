@@ -27,7 +27,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#4F2E1D"
                 />
 
             <TextView
@@ -38,7 +38,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#4F2E1D"/>
 
         </LinearLayout>
 
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/lightpink"
             android:textColor="@color/black"
             android:text="Physical wellness promotes proper care of our bodies for optimal health and functioning. There are many elements of physical wellness that all must be cared for together. Overall physical wellness encourages the balance of physical activity, nutrition and mental well-being to keep your body in top condition. Obtaining an optimal level of physical wellness allows you to nurture personal responsibility for your own health. As you become conscious of your physical health, you are able to identify elements you are successful in as well as elements you would like to improve."
             android:padding="25dp"/>

@@ -27,7 +27,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#632767"
                 />
 
             <TextView
@@ -38,7 +38,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#632767"/>
 
         </LinearLayout>
 
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/lightpink"
             android:textColor="@color/black"
             android:text="Spiritual wellness allows us to be in tune with our spiritual selves. This realm of wellness lets us find meaning in life events and define our individual purpose. Spiritual wellness can be defined through various factors including religious faith, values, ethics and morals. Regardless of whether you believe in a particular religious faith, there is always something to be learned about how you see yourself in the world."
             android:padding="25dp"/>
