@@ -17,15 +17,16 @@ android:orientation="vertical">
         android:layout_marginEnd="10dp"
         android:src="@drawable/user"
          />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="HEALTHAHOLIC"
         android:textAlignment="center"
-        android:fontFamily="@font/caveat"
-        android:text="HEALTHAHOLIC"/>
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        />
 
     <TextView
         android:layout_width="match_parent"

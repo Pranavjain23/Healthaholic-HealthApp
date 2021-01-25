@@ -25,7 +25,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="27sp"
         android:textStyle="bold"
-        app:fontFamily="@font/creepster" />
+        app:fontFamily="@font/amiko_bold" />
 
     <ScrollView
         android:id="@+id/scroll"

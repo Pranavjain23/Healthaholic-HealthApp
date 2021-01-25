@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:text="The primary goal of this app is eat healthy and get fit. This app assists individuals in monitoring their own health conditions such as intellectual wellness, mental health and physical heath with easy-to-use step counter, calorie counter and bmi counter. The goal of our app is to make the experience of healthcare more efficient and satisfying for all people involved with The Healthaholic Team. It gives you access to health related information such as the yoga asana, gym exercises and  Home workout, even if your posture has been a problem for years, it's possible to make improvements. It provides you with healthy recipes and the best diet plans.The Healthaholic is the simplest and most effective healthy eating &amp; weight loss app."
                     android:textColor="@color/black"
-                    android:textSize="17sp"
+                    android:textSize="18sp"
                     app:fontFamily="@font/caveat" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

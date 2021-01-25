@@ -80,7 +80,7 @@
                     android:text="Motto for Life"
                     android:fontFamily="@font/caveat"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <TextView

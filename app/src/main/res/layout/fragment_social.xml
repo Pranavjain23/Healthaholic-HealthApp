@@ -65,7 +65,7 @@
             android:background="@color/colorPrimary"
             android:textColor="@color/black"
             android:text="Social wellness refers to the relationships we have and how we interact with others. Our relationships can offer support during difficult times. Social wellness involves building healthy, nurturing and supportive relationships as well as fostering a genuine connection with those around you. Conscious actions are important in learning how to balance your social life with your academic and professional lives. Social wellness also includes balancing the unique needs of romantic relationships with other parts of your life."
-            android:padding="20dp"/>
+            android:padding="25dp"/>
     </androidx.cardview.widget.CardView>
 
 
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Route to Social Wellness"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#182B55"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
@@ -87,7 +87,6 @@
         android:layout_height="wrap_content"
         android:entries="@array/SocialEntries"
         android:layout_below="@id/txtRoute"
-        android:background="@color/colorPrimary"
         android:layout_margin="10dp"/>
 
 </RelativeLayout>
