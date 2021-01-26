@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.healthapp">
+
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
     <application
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_appicon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.HomeWorkoutActivity"/>
+        <activity android:name=".activity.SplashActivity"></activity>
+        <activity android:name=".activity.HomeWorkoutActivity" />
         <activity android:name=".activity.BmiActivity" />
         <activity android:name=".activity.StepCounterActivity" />
         <activity android:name=".activity.gymActivity.Gym_Activity_advance_day1" />
