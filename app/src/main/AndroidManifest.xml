@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.healthapp">
+    package="com.health.healthapp">
 
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
@@ -11,32 +11,32 @@
         android:roundIcon="@mipmap/ic_appicon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"></activity>
-        <activity android:name=".activity.HomeWorkoutActivity" />
-        <activity android:name=".activity.BmiActivity" />
-        <activity android:name=".activity.StepCounterActivity" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day1" />
-        <activity android:name=".activity.YogaActivity" />
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name="com.health.healthapp.activity.MainActivity"></activity>
+        <activity android:name="com.health.healthapp.activity.HomeWorkoutActivity" />
+        <activity android:name="com.health.healthapp.activity.BmiActivity" />
+        <activity android:name="com.health.healthapp.activity.StepCounterActivity" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day1" />
+        <activity android:name="com.health.healthapp.activity.YogaActivity" />
+        <activity android:name="com.health.healthapp.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day2" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day3" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day5" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day6" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_advance_day7" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_beginner_day1" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_beginner_day2" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_beginner_day3" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day1" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day2" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day3" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day4" />
-        <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day5" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day2" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day3" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day5" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day6" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_advance_day7" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_beginner_day1" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_beginner_day2" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_beginner_day3" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_intermediate_day1" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_intermediate_day2" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_intermediate_day3" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_intermediate_day4" />
+        <activity android:name="com.health.healthapp.activity.gymActivity.Gym_Activity_intermediate_day5" />
 
         <meta-data
             android:name="preloaded_fonts"
