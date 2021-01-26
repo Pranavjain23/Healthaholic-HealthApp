@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_appicon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashActivity"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
         <activity android:name=".activity.HomeWorkoutActivity" />
         <activity android:name=".activity.BmiActivity" />
         <activity android:name=".activity.StepCounterActivity" />
         <activity android:name=".activity.gymActivity.Gym_Activity_advance_day1" />
         <activity android:name=".activity.YogaActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
