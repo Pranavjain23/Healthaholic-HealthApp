@@ -173,7 +173,10 @@
         android:layout_marginLeft="30dp"
         android:layout_below="@id/llContent"
         android:padding="20dp"
-        android:text="Calculate BMI "
+        android:text="Calculate BMI"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
         android:background="@drawable/pink_background"
         tools:layout_editor_absoluteX="132dp"
         tools:layout_editor_absoluteY="434dp" />
